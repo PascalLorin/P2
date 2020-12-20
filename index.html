@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<script src="https://kit.fontawesome.com/b336c3d0c9.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<meta name="author" content="Pascal Lorin">
+	<title>Reservia</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+	<div class="site-container">
+
+		<!-- Début du header -->
+		<header>
+			<div class="main-bar">
+				<div>
+					<img class="logo" src="./images/logo/Reservia.svg" alt="Le site de vos vacances">
+				</div>
+				<div class="navbar">
+					<div class="navbar_h">
+						<a class="bleusite" href="#l-hebergements" title="Trouvez votre hébergement">Hébergements</a>
+					</div>
+					<div class="navbar_a">
+						<a class="noir" href="#l-activites" title="Découvrez les activités">Activités</a>
+					</div>
+					<div class="navbar_i">
+						<a class="bleusite" href="#" target="_blank"
+							title="Inscrivez-vous pour réserver, nouvel onglet">S'incrire</a>
+					</div>
+				</div>
+			</div>
+			<hgroup class="accroche">
+				<h1 class="titre-p">Trouver votre hébergement pour des vacances de rêve</h1>
+				<h2 class="titre-2">en plein centre ville ou en pleine nature</h2>
+			</hgroup>
+		</header>
+
+		<!--  Début de la saisie de la sélection  -->
+		<!--  Saisie de la ville                  -->
+		<div class="selections" id="l-hebergements">
+			<!--   Sélection de la ville   -->
+			<div class="hebergements">
+				<div class="ico_info noir fondgris">
+					<i class="fa fa-map-marker-alt"></i>
+					<form class="form-inligne" action="#">
+						<input class="form-control" type="text" placeholder="Marseille, France">
+						<button class="btn btn-info" type="submit">Rechercher</button>
+					</form>
+				</div>
+				<br><br>
+			</div>
+			<div class="search">
+
+				<div class="btn-recherche">
+					<span class="pin-icone"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></span>
+					<form method="POST" action="#" class="recherche">
+						<input class="btn-recherche__input" type="search" name="recherche"
+							placeholder="Marseille, France" autofocus="">
+						<input type="submit" class="btn-recherche__input__submit" value="Rechercher">
+					</form>
+					<span class="btn-recheche__loupe"><i><i class="fas fa-search" aria-hidden="true"></i></i></span>
+				</div>
+
+			</div>
+			<!--  Saisie des filtres                  -->
+			<div class="filtres">
+				<div>
+					<h1>Filtres</h1>
+				</div>
+				<div>
+					<span class="fa fa-money-bill-wave"></span> <button type="button"> Economiques </button>
+				</div>
+				<div>
+					<span class="fa fa-child"></span> <button type="button"> Familial </button>
+				</div>
+				<div>
+					<span class="fa fa-heart"></span> <button type="button"> Romantique </button>
+				</div>
+				<div>
+					<span class="fa fa-dog"></span> <button type="button"> Animaux autorisés</button>
+				</div>
+			</div>
+			<div>
+				<span class="fa fa-info"></span> Plus de 500 logements dans cette ville
+			</div>
+		</div>
+
+		<!-- Début affichage des résultats -->
+		<div class="row">
+			<div class="column hebergements fondgris">
+				<div class="titre-p">
+					Hébergements à Marseille
+				</div>
+				<div class="tab-biens">
+					<div class="biens">
+						Bien 1
+					</div>
+					<div class="biens">
+						Bien 2
+					</div>
+					<div class="biens">
+						Bien 3
+					</div>
+					<div class="biens">
+						Bien 4
+					</div>
+					<div class="biens">
+						Bien 5
+					</div>
+					<div class="biens">
+						Bien 6
+					</div>
+				</div>
+				<h2>Afficher tout</h2>
+			</div>
+			<div class="column populaires fondgris">
+				<div class="pop-entete">
+					<div class="titre-p">
+						Les plus populaires
+					</div>
+					<div>
+						<span class="fa fa-chart-line"></span>
+					</div>
+				</div>
+				<div class="epop">
+					pop 1
+				</div>
+				<div class="epop">
+					pop 2
+				</div>
+				<div class="epop">
+					pop 3
+				</div>
+			</div>
+		</div>
+		<!-- Fin affichage des résultats -->
+
+		<!-- Début affichage des activités -->
+		<div class="activites" id="l-activites">
+			<div class="titre-p" Activités à Marseille </div> <div class="tab-biens">
+				<div class="activite-g">
+					Bien 1
+				</div>
+				<div class="activite-p">
+					Bien 2
+				</div>
+				<div class="activite-p">
+					Bien 3
+				</div>
+				<div class="activite-g">
+					Bien 4
+				</div>
+				<div class="activite-p">
+					Bien 5
+				</div>
+				<div class="activite-p">
+					Bien 6
+				</div>
+			</div>
+			</p>
+		</div>
+		<!-- Fin affichage des activités -->
+
+		<!-- Début du pied de page -->
+		<div class="footer fondgris">
+			<nav class="fmenu m1">
+				<ul>
+					<li><strong>A propos</strong></li>
+					<li><a href="#">Fonctionnement du site</a></li>
+					<li><a href="#">Conditions générales de vente</a></li>
+					<li><a href="#">Données et confidentialité</a></li>
+				</ul>
+			</nav>
+			<nav class="fmenu m2">
+				<ul>
+					<li><strong>Nos héberbements</strong></li>
+					<li><a href="#">Charte qualité</a></li>
+					<li><a href="#">Soumettre votre hôtel</a></li>
+				</ul>
+			</nav>
+			<nav class="fmenu m3">
+				<ul>
+					<li><strong>Assistance</strong></li>
+					<li><a href="#">Centre d'aide</a></li>
+					<li><a href="#">Nous contacter</a></li>
+				</ul>
+			</nav>
+		</div>
+		<!-- Fin du pied de page -->
+	</div>
+</body>
+
+</html>
