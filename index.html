@@ -22,14 +22,14 @@
 					<img class="logo" src="./images/logo/Reservia.svg" alt="Le site de vos vacances">
 				</div>
 				<div class="navbar">
-					<div class="navbar_h">
+					<div class="navbar-h">
 						<a class="bleusite" href="#l-hebergements" title="Trouvez votre hébergement">Hébergements</a>
 					</div>
-					<div class="navbar_a">
+					<div class="navbar-a">
 						<a class="noir" href="#l-activites" title="Découvrez les activités">Activités</a>
 					</div>
-					<div class="navbar_i">
-						<a class="bleusite" href="#" target="_blank"
+					<div class="navbar-i">
+						<a class="bleusite titre2" href="#" target="_blank"
 							title="Inscrivez-vous pour réserver, nouvel onglet">S'incrire</a>
 					</div>
 				</div>
@@ -45,8 +45,8 @@
 		<div class="selections" id="l-hebergements">
 			<!--   Sélection de la ville   -->
 			<div class="hebergements">
-				<div class="ico_info noir fondgris">
-					<i class="fa fa-map-marker-alt"></i>
+				<div class="ico-info noir fondgris">
+					<i class="fas fa-map-marker-alt"></i>
 					<form class="form-inligne" action="#">
 						<input class="form-control" type="text" placeholder="Marseille, France">
 						<button class="btn btn-info" type="submit">Rechercher</button>
@@ -54,39 +54,40 @@
 				</div>
 				<br><br>
 			</div>
+			<!--
 			<div class="search">
-
+				<div class="search">
 				<div class="btn-recherche">
-					<span class="pin-icone"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></span>
+					<span class="pin-icone"><i class="fa fa-map-marker-alt" aria-hidden="true"></i></span>
 					<form method="POST" action="#" class="recherche">
 						<input class="btn-recherche__input" type="search" name="recherche"
 							placeholder="Marseille, France" autofocus="">
 						<input type="submit" class="btn-recherche__input__submit" value="Rechercher">
 					</form>
-					<span class="btn-recheche__loupe"><i><i class="fas fa-search" aria-hidden="true"></i></i></span>
+					<span class="btn-recheche__loupe"></span>
 				</div>
-
 			</div>
+-->
 			<!--  Saisie des filtres                  -->
-			<div class="filtres">
+			<div class="filtres titre-m">
 				<div>
 					<h1>Filtres</h1>
 				</div>
 				<div>
-					<span class="fa fa-money-bill-wave"></span> <button type="button"> Economiques </button>
+					<span class="fas fa-money-bill-wave"></span> <button type="button"> Economiques </button>
 				</div>
 				<div>
-					<span class="fa fa-child"></span> <button type="button"> Familial </button>
+					<span class="fas fa-child"></span> <button type="button"> Familial </button>
 				</div>
 				<div>
-					<span class="fa fa-heart"></span> <button type="button"> Romantique </button>
+					<span class="fas fa-heart"></span> <button type="button"> Romantique </button>
 				</div>
 				<div>
-					<span class="fa fa-dog"></span> <button type="button"> Animaux autorisés</button>
+					<span class="fas fa-dog"></span> <button type="button"> Animaux autorisés</button>
 				</div>
 			</div>
 			<div>
-				<span class="fa fa-info"></span> Plus de 500 logements dans cette ville
+				<span class="fas fa-info"></span> Plus de 500 logements dans cette ville
 			</div>
 		</div>
 
@@ -116,7 +117,7 @@
 						Bien 6
 					</div>
 				</div>
-				<h2>Afficher tout</h2>
+				<h2 class="titre-m">Afficher plus</h2>
 			</div>
 			<div class="column populaires fondgris">
 				<div class="pop-entete">
@@ -124,7 +125,7 @@
 						Les plus populaires
 					</div>
 					<div>
-						<span class="fa fa-chart-line"></span>
+						<span class="fas fa-chart-line"></span>
 					</div>
 				</div>
 				<div class="epop">
@@ -142,57 +143,61 @@
 
 		<!-- Début affichage des activités -->
 		<div class="activites" id="l-activites">
-			<div class="titre-p" Activités à Marseille </div> <div class="tab-biens">
-				<div class="activite-g">
-					Bien 1
-				</div>
-				<div class="activite-p">
-					Bien 2
-				</div>
-				<div class="activite-p">
-					Bien 3
-				</div>
-				<div class="activite-g">
-					Bien 4
-				</div>
-				<div class="activite-p">
-					Bien 5
-				</div>
-				<div class="activite-p">
-					Bien 6
+			<div class="titre-p" Activités à Marseille>
+				<div class="tab-biens">
+					<div class="activite-g">
+						Bien 1
+					</div>
+					<div>
+						<div class="activite-p">
+							Bien 2
+						</div>
+					</div>
+					<div class="activite-p">
+						Bien 3
+					</div>
+					<div class="activite-g">
+						Bien 4
+					</div>
+					<div>
+						<div class="activite-p">
+							Bien 5
+						</div>
+						<div class="activite-p">
+							Bien 6
+						</div>
+					</div>
 				</div>
 			</div>
-			</p>
-		</div>
-		<!-- Fin affichage des activités -->
+			<!-- Fin affichage des activités -->
 
-		<!-- Début du pied de page -->
-		<div class="footer fondgris">
-			<nav class="fmenu m1">
-				<ul>
-					<li><strong>A propos</strong></li>
-					<li><a href="#">Fonctionnement du site</a></li>
-					<li><a href="#">Conditions générales de vente</a></li>
-					<li><a href="#">Données et confidentialité</a></li>
-				</ul>
-			</nav>
-			<nav class="fmenu m2">
-				<ul>
-					<li><strong>Nos héberbements</strong></li>
-					<li><a href="#">Charte qualité</a></li>
-					<li><a href="#">Soumettre votre hôtel</a></li>
-				</ul>
-			</nav>
-			<nav class="fmenu m3">
-				<ul>
-					<li><strong>Assistance</strong></li>
-					<li><a href="#">Centre d'aide</a></li>
-					<li><a href="#">Nous contacter</a></li>
-				</ul>
-			</nav>
+			<!-- Début du pied de page -->
+			<div class="footer fondgris">
+				<nav class="fmenu m1">
+					<ul>
+						<li class="titre-m">A propos</li>
+						<li><a href="#">Fonctionnement du site</a></li>
+						<li><a href="#">Conditions générales de vente</a></li>
+						<li><a href="#">Données et confidentialité</a></li>
+					</ul>
+				</nav>
+				<nav class="fmenu m2">
+					<ul>
+						<li class="titre-m">Nos héberbements</li>
+						<li><a href="#">Charte qualité</a></li>
+						<li><a href="#">Soumettre votre hôtel</a></li>
+					</ul>
+				</nav>
+				<nav class="fmenu m3">
+					<ul>
+						<li class="titre-m">Assistance</li>
+						<li><a href="#">Centre d'aide</a></li>
+						<li><a href="#">Nous contacter</a></li>
+					</ul>
+				</nav>
+			</div>
+			<!-- Fin du pied de page -->
 		</div>
-		<!-- Fin du pied de page -->
-	</div>
 </body>
 
 </html>
