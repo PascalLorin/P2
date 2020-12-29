@@ -345,12 +345,13 @@ aside {
   flex-direction:column;
   width: 100%;
   margin: 1rem;
-  align-items: space-between;   
+  justify-content: space-between;   
 }
 
 .pop-stars {
   /*   position:absolute;   */
   display: flex;
+  flex-direction: row;
   
 }
 
