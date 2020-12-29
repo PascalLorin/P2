@@ -20,16 +20,18 @@
 		<header>
 
 			<a href="#"><img class="logo" src="./images/logo/reservia.svg" title="Le site de vos vacances de rêve">
-			<div class="navbar">
-				<a class="navbar-h bleusite" href="#l-hebergements" title="Trouvez votre hébergement">Hébergements</a>
-				<a class="navbar-a noir" href="#l-activites" title="Découvrez les activités">Activités</a>
-				<a class="navbar-i bleusite titre2" href="#" target="_blank" title="Inscrivez-vous pour réserver, nouvel onglet">S'incrire</a>
-			</div>
+				<div class="navbar">
+					<a class="navbar-h bleusite" href="#l-hebergements"
+						title="Trouvez votre hébergement">Hébergements</a>
+					<a class="navbar-a noir" href="#l-activites" title="Découvrez les activités">Activités</a>
+					<a class="navbar-i bleusite titre-2" href="#" target="_blank"
+						title="Inscrivez-vous pour réserver, nouvel onglet">S'incrire</a>
+				</div>
 
-			<div class="accroche">
-				<h1 class="titre-p">Trouver votre hébergement pour des vacances de rêve</h1>
-				<h2 class="titre-2">en plein centre ville ou en pleine nature</h2>
-			</div>
+				<div class="accroche">
+					<div class="titre-p">Trouver votre hébergement pour des vacances de rêve</div>
+					<div class="titre-2">En plein centre ville ou en pleine nature</div>
+				</div>
 
 		</header>
 
@@ -62,10 +64,8 @@
 			</div>
 -->
 			<!--  Saisie des filtres                  -->
-			<div class="filtres titre-m">
-				<div>
-					<h1>Filtres</h1>
-				</div>
+			<div class="filtres titre-2">
+				Filtres
 				<div>
 					<span class="fas fa-money-bill-wave"></span> <button type="button"> Economiques </button>
 				</div>
@@ -85,53 +85,95 @@
 		</div>
 
 		<!-- Début affichage des résultats -->
-		<div class="row">
-			<div class="column hebergements fondgris">
-				<div class="titre-p">
-					Hébergements à Marseille
-				</div>
-				<div class="tab-biens">
-					<div class="biens">
-						Bien 1
-					</div>
-					<div class="biens">
-						Bien 2
-					</div>
-					<div class="biens">
-						Bien 3
-					</div>
-					<div class="biens">
-						Bien 4
-					</div>
-					<div class="biens">
-						Bien 5
-					</div>
-					<div class="biens">
-						Bien 6
-					</div>
-				</div>
-				<h2 class="titre-m">Afficher plus</h2>
+
+		<!-- Affichage des + populaires    -->
+		<aside class="fondgris">
+			<div class="pop-entete noir">
+				<div class="titre-p">Les plus populaires</div>
+				<a href="#"><span><i class="fas fa-chart-line titre-p"></i></span></a>
 			</div>
-			<div class="column populaires fondgris">
-				<div class="pop-entete">
-					<div class="titre-p">
-						Les plus populaires
+			<div class="populaires">
+				<div class="det-pop fondblanc">
+					<img class="pop-photo" src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+						alt="Une chambre de l'hotel Le soleil du matin">
+					<div class="pop-description">
+						<h2 class="pop-nom">Hôtel Le soleil du matin</h2>
+						<h4 class="pop-prix">Nuit à partir de 128 <strong>€</strong></h4>
+						<ul class="pop-stars">
+							<li> <i class="fas fa-star bleusite"></i></li>
+							<li> <i class="fas fa-star bleusite"></i></li>
+							<li> <i class="fas fa-star bleusite"></i></li>
+							<li> <i class="fas fa-star bleusite"></i></li>
+							<li> <i class="fas fa-star bleusite"></i></li>
+						</ul>
 					</div>
-					<div>
-						<span class="fas fa-chart-line"></span>
+				</div>
+				<div class="det-pop fondblanc">
+					<img class="pop-photo" src="./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+						alt="Une chambre au coeur de l'eau">
+					<div class="pop-description">
+						<h2 class="pop-nom">Au coeur de l'eau</h2>
+						<h2 class="pop-nom">Chambres d'hôtes</h2>
+						<h4 class="pop-prix">Nuit à partir de 71 <strong>€</strong></h4>
+						<ul class="pop-stars">
+							<li> <i class="fas fa-star bleusite"></i></li>
+							<li> <i class="fas fa-star bleusite"></i></li>
+							<li> <i class="fas fa-star bleusite"></i></li>
+							<li> <i class="fas fa-star bleusite"></i></li>
+							<li> <i class="fas fa-star grisfonce"></i></li>
+						</ul>
 					</div>
 				</div>
-				<div class="det-pop">
-					pop 1
-				</div>
-				<div class="det-pop">
-					pop 2
-				</div>
-				<div class="det-pop">
-					pop 3
+				<div class="det-pop fondblanc">
+					<img class="pop-photo" src="./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+						alt="Une chambre de l'hotel Tout Bleu et Blanc">
+					<div class="pop-description">
+						<div>
+							<h2 class="pop-nom">Hôtel Tout bleu et Blanc</h2>
+							<h5 class="pop-prix">Nuit à partir de 128 <strong>€</strong></h5>
+						</div>
+						<div class="pop-stars">
+							<ul>
+								<li> <i class="fas fa-star bleusite"></i></li>
+								<li> <i class="fas fa-star bleusite"></i></li>
+								<li> <i class="fas fa-star bleusite"></i></li>
+								<li> <i class="fas fa-star bleusite"></i></li>
+								<li> <i class="fas fa-star grisfonce"></i></li>
+							</ul>
+						</div>
+					</div>
+
 				</div>
 			</div>
-		</div>
+		</aside>
+
+		<!-- Affichage des hébergements    -->
+		<section class="hebergements fondgris">
+			<div class="titre-p">
+				Hébergements à Marseille
+			</div>
+			<div class="tab-biens">
+				<div class="biens">
+					Bien 1
+				</div>
+				<div class="biens">
+					Bien 2
+				</div>
+				<div class="biens">
+					Bien 3
+				</div>
+				<div class="biens">
+					Bien 4
+				</div>
+				<div class="biens">
+					Bien 5
+				</div>
+				<div class="biens">
+					Bien 6
+				</div>
+			</div>
+			<h2 class="titre-2">Afficher plus</h2>
+		</section>
 		<!-- Fin affichage des résultats -->
 
 		<!-- Début affichage des activités -->
@@ -166,35 +208,36 @@
 					</div>
 				</div>
 			</div>
-			<!-- Fin affichage des activités -->
-
-			<!-- Début du pied de page -->
-			<div class="footer fondgris">
-				<nav class="fmenu m1">
-					<ul>
-						<li class="titre-m">A propos</li>
-						<li><a href="#">Fonctionnement du site</a></li>
-						<li><a href="#">Conditions générales de vente</a></li>
-						<li><a href="#">Données et confidentialité</a></li>
-					</ul>
-				</nav>
-				<nav class="fmenu m2">
-					<ul>
-						<li class="titre-m">Nos héberbements</li>
-						<li><a href="#">Charte qualité</a></li>
-						<li><a href="#">Soumettre votre hôtel</a></li>
-					</ul>
-				</nav>
-				<nav class="fmenu m3">
-					<ul>
-						<li class="titre-m">Assistance</li>
-						<li><a href="#">Centre d'aide</a></li>
-						<li><a href="#">Nous contacter</a></li>
-					</ul>
-				</nav>
-			</div>
-			<!-- Fin du pied de page -->
 		</div>
+		<!-- Fin affichage des activités -->
+
+		<!-- Début du pied de page -->
+		<footer class="fondgris">
+			<nav class="fmenu m1">
+				<ul>
+					<li class="titre-m">A propos</li>
+					<li><a href="#">Fonctionnement du site</a></li>
+					<li><a href="#">Conditions générales de vente</a></li>
+					<li><a href="#">Données et confidentialité</a></li>
+				</ul>
+			</nav>
+			<nav class="fmenu m2">
+				<ul>
+					<li class="titre-m">Nos héberbements</li>
+					<li><a href="#">Charte qualité</a></li>
+					<li><a href="#">Soumettre votre hôtel</a></li>
+				</ul>
+			</nav>
+			<nav class="fmenu m3">
+				<ul>
+					<li class="titre-m">Assistance</li>
+					<li><a href="#">Centre d'aide</a></li>
+					<li><a href="#">Nous contacter</a></li>
+				</ul>
+			</nav>
+		</footer>
+		<!-- Fin du pied de page -->
+	</div>
 </body>
 
 </html>
