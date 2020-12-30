@@ -146,8 +146,8 @@ a:focus {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 3rem;
   height:4rem;
+  margin-bottom: 4rem;
 }
 
 .marker-ico {
@@ -159,7 +159,11 @@ a:focus {
   justify-content: center;
 }
 
+
+/*  sélectionne le bouton qui s'affiche   */ 
+/*  icône ou bouton Rechercher            */
 .search-ico {
+  display: auto;
   border: none;
   border-radius: 1rem;
   height: 4rem;
@@ -168,95 +172,58 @@ a:focus {
   justify-content: center;
 }
 
+.btn-recherche {
+  display: none;
+  border: none;
+  border-radius: 0 1rem 1rem 0;
+  height: 4rem;
+  width: auto;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+  }
+
 .recherche {
   height: 4rem;
   display: flex;
   border: none;
   font-size:2rem;
   font-weight: 900;
+  padding: 0.5rem;
 }
 
 /*  sélection des filtres */
 .sel-filtres {
-  display: grid;
-  grid-area: filtres;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  padding-top: 4rem;
-}
-
-.filtres-container {
   display: flex;
-  align-items: center;
+  width: 100%;
+  margin-bottom: 3rem;
 }
 
 .titre-filtres {
   width:unset;
   margin-right: 4rem;
 }
-/*
-button {
-  background-color: Transparent;
-  background-repeat: no-repeat;
-  border: none;
-  border-radius: 4rem; 
-  cursor: pointer;
-  overflow: hidden;
-  outline: none;
+
+.filtres-container {
+  margin-bottom: 3rem;
 }
-
-button p {
-  display: inline;
-}
-*/
-
-.filtre-item {
-  display: flex;
-  margin: 1rem;
-  position: relative;
-  top: 2.5rem;
-  transition: 0.3s;
-}
-/*
-.filtre-item i {
-  font-size: medium;
-}
-*/
-
-.filtre.icone {
-  height: 5rem;
-  width: 5rem;
-  border-radius: 50%;
-  display: flex;
-  position: absolute;
-  left: -1rem;
-  top: -0.1rem;
-  z-index: 1;
-}
-
-.filtre.icone i {
-  margin: auto;
-}
-
-.filtre-item-form {
-  display: flex;
-  justify-content: flex-start;
-}
-
-
-.filtre-input{}
-
 
 .btn-filtre {
-  display: inline-block;
-  border: 0.1rem solid 'noir';
-  border-radius: 25%;
+  flex-direction: row;
+  height: 4rem;
+  border: 1px;
+  border-radius: 2rem;
+  margin-right: 1rem;
 }
 
-.btn-filtre p {
-  padding-left: 2rem;
-  padding-right: 2rem;
+.filtre-ico {
+  border-radius: 2rem;
 }
 
+.filtre-nom {
+  padding: 0.5rem;
+
+}
 
 /*  Affichage du nombre de logements  */
 .info-nombre {
@@ -264,7 +231,6 @@ button p {
   display: flex;
   margin: 3rem 0 3rem 5%;
   align-items: center;
-
 }
 
 .icone-info {
