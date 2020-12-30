@@ -137,18 +137,16 @@ navbar a {
 /****   et sélection des filtres     ***/
 
 /*  sélection de la ville  */
-.selection-v {
+.sel-ville {
   margin-bottom: 3rem;
   margin-top: 3rem;
+  border: 1px solid 'noir';
+  border-radius: 0.4rem;
+  line-height:2rem;
+  font-size:1.8rem;
 }
 
-.select-ville {
-  border: solid 3px black;
-  border-radius: 0.3rem;
- font-size: 1.8rem;
-}
-
-.icone-marker {
+.marker-ico {
   border: 'fondgris';
   border-radius:25%;
   height: 2rem;
@@ -158,7 +156,15 @@ navbar a {
   justify-content: center;
 }
 
-.icone-search {
+.form-inligne {
+  border-radius:25%;
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.form-control {
   border-radius:25%;
   height: 2rem;
   width: 2rem;
@@ -168,13 +174,8 @@ navbar a {
 
 .recherche {
   height: 2rem;
-
   display: flex;
   align-items: center;
-}
-
-.btn-ville-submit {
-  visibility:hidden;
 }
 
 /*  sélection des filtres */
@@ -374,8 +375,8 @@ section {
 .det-heb {
   display: flex;
   flex-direction: column;
-  width: 100%;
   height: 30rem;
+  width: 100%;
   padding: 0.5rem;
   border-radius: 1.5rem;
   box-shadow: 1px 1px 15px #444;
@@ -384,7 +385,6 @@ section {
 
 .heb-photo {
   object-fit: cover;
-  position:flex-start;
   height: 60%;
   width: 100%;
   border-radius: 1.3rem 1.3rem 0 0;  
@@ -394,8 +394,9 @@ section {
   position: relative;
   display: flex;
   flex-direction:column;
+  flex: 1;
   width: 100%;
-  margin: 1rem;
+  padding: 1rem;
   justify-content: space-between;   
 }
 
@@ -460,10 +461,14 @@ footer {
   padding-top: 4rem;
 }
 
+.menus-f {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 /*  menus du footer   */
 .fmenu {
   line-height: 3.0rem;
-  min-width: 33%;
+  width: 100%;
   padding-bottom: 4rem;
 }
