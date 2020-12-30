@@ -358,7 +358,7 @@ section {
   height: 4rem;
   display: flex;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .hebergements {
@@ -404,36 +404,53 @@ section {
 }
 
 /* affichage des activités  */
-.activites {
-  border: 0.1rem;
-  border-radius: 1.5rem;
-  height: auto;
+.tab-activites {
+  border: none;
+  margin: 0.8rem;
   margin-bottom: 3rem;
 }
 
-.tab-activites {
+.act-entete {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.activites {
   display: grid;
-  grid-area: activites;
-  grid-template-columns: 1fr;  
-  grid-row-gap: 3rem;
+  grid-area: hebergements;
+  grid-template-columns: 1fr;
+  grid-row-gap: 4rem;
   grid-column-gap: 4rem;
-  height: auto;
-  border: 0.1rem;
-  border-radius: 1.5rem;
+  justify-items: center;
 }
 
-.activite-g {
-  height: 42rem;
-  background-color: rgb(165, 53, 105);
-  border: 0.1rem;
+/*   Pastilles activités   */
+.det-act {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 30rem;
   border-radius: 1.5rem;
+  box-shadow: 1px 1px 15px #444;
+  align-items: space-between;
+}
+.act-photo {
+  object-fit: cover;
+  position:flex-start;
+  height: 85%;
+  width: 100%;
+  border-radius: 1.5rem 1.5rem 0 0;  
 }
 
-.activite-p {
-  height: 20rem;
-  background-color: rgb(104, 71, 86);
-  border: 0.1rem;
-  border-radius: 1.5rem;
+.act-description {
+  position: relative;
+  display: flex;
+  flex-direction:column;
+  width: 100%;
+  padding-left: 2rem;
+  margin: 1rem;
 }
 
 /* Style du footer  */
