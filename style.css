@@ -13,8 +13,8 @@ body {
 }
 
 .titre-2 {
-  font-weight: 500;
-  font-size: 2.0rem;
+  font-weight: 400;
+  font-size: 2.1rem;
 }
 
 .titre-m {
@@ -28,8 +28,10 @@ body {
 .fondgris {background-color: #f2f2f2}
 .fondblanc {background-color: #fff}
 .bleusite {color: #0065fc}
+.charbleuclair {color: #deebff}
 .noir {color: #000}
 .blanc {color: #fff}
+.grisclair{color: #f2f2f2}
 .grisfonce{color: #555}
 
 * {
@@ -86,9 +88,10 @@ a:focus {
   justify-content: flex-end;
   position: relative;
   flex-wrap: wrap-reverse;
+  margin-bottom: 3rem;
 }
 
-navbar a {
+.navbar a {
   display: block;
   font-size: 1.3rem;
   font-weight: 600;
@@ -115,17 +118,19 @@ navbar a {
   position: relative;
   font-weight: 800;
   bottom: 6rem;
-  padding-right: 1rem;
+  padding-right: 4rem;
 }
 
+/*
 .fas {
   width:2rem;
   height:2rem;
 }
+*/
 
 /****  bandeau d'accroche             ***/
 .accroche {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 /****   PARTIE SELECTIONS            ***/
@@ -138,44 +143,37 @@ navbar a {
 
 /*  sélection de la ville  */
 .sel-ville {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   margin-bottom: 3rem;
-  margin-top: 3rem;
-  border: 1px solid 'noir';
-  border-radius: 0.4rem;
-  line-height:2rem;
-  font-size:1.8rem;
+  height:4rem;
 }
 
 .marker-ico {
-  border: 'fondgris';
-  border-radius:25%;
-  height: 2rem;
-  width: 2rem;
-/*  display: flex;   */
+  border: none;
+  border-radius: 1rem 0 0 1rem;
+  height: 4rem;
+  width: 4rem;
   align-items: center;
   justify-content: center;
 }
 
-.form-inligne {
-  border-radius:25%;
-  height: 2rem;
-  width: 2rem;
-  display: flex;
+.search-ico {
+  border: none;
+  border-radius: 1rem;
+  height: 4rem;
+  width: 4rem;
   align-items: center;
-}
-
-.form-control {
-  border-radius:25%;
-  height: 2rem;
-  width: 2rem;
-  display: flex;
-  align-items: center;
+  justify-content: center;
 }
 
 .recherche {
-  height: 2rem;
+  height: 4rem;
   display: flex;
-  align-items: center;
+  border: none;
+  font-size:2rem;
+  font-weight: 900;
 }
 
 /*  sélection des filtres */

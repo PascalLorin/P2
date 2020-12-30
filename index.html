@@ -33,7 +33,7 @@
 			</div>
 
 			<div class="accroche">
-				<div class="titre-p">Trouver votre hébergement pour des vacances de rêve</div>
+				<div class="titre-p">Trouver votre hébergement pour des vacances de rêve</div><br>
 				<div class="titre-2">En plein centre ville ou en pleine nature</div>
 			</div>
 
@@ -44,14 +44,16 @@
 		<div class="selections" id="l-hebergements">
 
 			<!--   Sélection de la ville   -->
-			<div class="sel-ville h2">
-				<div class="marker-ico noir fondgris">
-					<i class="fa fa-map-marker-alt" aria-hidden="true"></i>
-				</div>
-				<form method="POST" action="#" class="recherche">
-					<input class="btn-search-in" type="search" name="recherche" placeholder="Marseille, France"
-						size="50" max-lenght="100" autocomplete required>
-					<input type="submit" class="btn-search-in-submit" value="Rechercher">
+			<div class="sel-ville">
+				<form method="POST" action="#" class="recherche h2">
+					<button class="marker-ico noir fondgris" type="button" rel="Cliquer sur le bouton pour rechercher sur 		un plan" alt="Bouton de recherche sur un plan">
+						<i class="fa fa-map-marker-alt" aria-hidden="true"></i>
+					</button>
+					<input class="recherche noir" id="recherche" size="20" max-lenght="100" autocomplete
+						required placeholder="Marseille, France">
+					<button class="search-btn search-ico charbleuclair fondbleu" type="button" rel="Cliquer sur le bouton 		pour rechercher ville" alt="Bouton de recherche de la ville saisie">
+						<i class="fa fa-search" aria-hidden="true"></i>
+					</button>
 				</form>
 			</div>
 			<!--
