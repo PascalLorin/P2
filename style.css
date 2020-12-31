@@ -33,6 +33,7 @@ body {
 .blanc {color: #fff}
 .grisclair{color: #f2f2f2}
 .grisfonce{color: #555}
+.bordgris{border-color:#f2f2f2}
 
 * {
   box-sizing: border-box;
@@ -136,7 +137,7 @@ a:focus {
 /****   PARTIE SELECTIONS            ***/
 
 .selections {
-  margin:1.5rem;
+  margin:1rem;
 }
 /****   sélection de la ville        ***/
 /****   et sélection des filtres     ***/
@@ -168,6 +169,8 @@ a:focus {
   border-radius: 1rem;
   height: 4rem;
   width: 4rem;
+  object-position: -1rem;
+  z-index: 1;
   align-items: center;
   justify-content: center;
 }
@@ -187,63 +190,169 @@ a:focus {
   height: 4rem;
   display: flex;
   border: none;
-  font-size:2rem;
+  font-size: 2rem;
   font-weight: 900;
-  padding: 0.5rem;
+  padding-left: 1rem;
 }
 
 /*  sélection des filtres */
 .sel-filtres {
   display: flex;
-  width: 100%;
+  align-items: space-between;
   margin-bottom: 3rem;
 }
 
 .titre-filtres {
   width:unset;
+  height: 3rem;
   margin-right: 4rem;
 }
-
-.filtres-container {
-  margin-bottom: 3rem;
+fieldset {
+  border: none;
+  display: flex;
 }
 
-.btn-filtre {
-  flex-direction: row;
+.filtre-item {}
+
+.filtre-btn {
+  /* display: flex;  */
+  display: row;
+/*  position: relative;   */
+  margin: 1rem;
   height: 4rem;
-  border: 1px;
+  border: 1px solid;
   border-radius: 2rem;
+  align-items: center;
+  justify-content: center;
   margin-right: 1rem;
 }
 
 .filtre-ico {
+  margin: auto;
+  /* position: flex-start;
+  border: none;
   border-radius: 2rem;
+  height: auto;
+  width: auto;
+  align-items: center;
+  justify-content: center;  */
+}
+.filter-container {
+  margin-left: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
-.filtre-nom {
-  padding: 0.5rem;
+.filter-title {
+  width: 100%;
+  font-size: 1rem;
+  margin-top: 30px;
+  margin-left: 5px;
+}
 
+.filter-item {
+  display: flex;
+  margin: 10px;
+  position: relative;
+  top: 25px;
+  transition: 0.3s;
+}
+
+.filter-item i {
+  font-size: medium;
+}
+
+.filter-input {
+  background-color: #fff;
+  transition: all 0.5s;
+}
+
+.filter-input:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+  background-color: #0065fc;
+  color: #deebff;
+}
+
+.filter-icone {
+  background-color: #deebff;
+  height: 52px;
+  width: 52px;
+  border-radius: 50%;
+  display: flex;
+  position: absolute;
+  left: -9px;
+  top: -1px;
+  z-index: 1;
+}
+
+.filter-icone i,
+.icone-info i {
+  color: #0065fc;
+  margin: auto;
+}
+
+
+.filtre-item-formulaire {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.filter-item-formulaire input {
+  height: 50px;
+  border: solid 1px #deebff;
+  border-radius: 20px;
+  padding-left: 56px;
+  font-weight: bolder;
+}
+
+
+.filtre-nom {
+  align-items: center;
+  justify-content: center;
+  padding-left: 2rem;
+}
+
+.filtre-input {
+  /* display: none;  */
+  /* visibility: hidden;  */
+}
+
+.eco input {
+  width: 22rem;
+}
+
+.famille input {
+  width: 13rem;
+}
+
+.romantique input {
+  width: 16rem;
+}
+
+.animaux input {
+  width: 19rem;
 }
 
 /*  Affichage du nombre de logements  */
 .info-nombre {
-  font-weight: 500;
   display: flex;
-  margin: 3rem 0 3rem 5%;
-  align-items: center;
-}
+  margin-bottom: 4rem;
+ }
 
 .icone-info {
-  display: flex;
+
+  align-items: center;
   justify-content: center;
-  height: 2.5rem;
-  width: 2.5rem;
-  border: solid 0.1rem;
-  border-radius: 2rem;
+  height: 3rem;
+  width: 3rem;
+  border: solid 0.1rem #f2f2f2;
+  border-radius: 50%;
 }
 
 .text-info {
-  padding-left: 1rem;
+  padding-left: 2rem;
 }
 
 /* coeur de page  ************/
