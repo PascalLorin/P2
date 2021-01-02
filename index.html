@@ -62,17 +62,17 @@
 			</div>
 
 			<!--  Saisie des filtres                  -->
-			<div id="sel-filtres">
-				<div class="titre-m">
+			<div id="filtres-selection">
+				<div class="filtres-titre titre-m">
 					<span>Filtres</span>
 				</div>
 
-				<fieldset class="filtres-container">
+				<fieldset class="filtres-selecteur">
 		
-					<div class="filtre-btn">
-						<span class="filtre-ico"><i class="fas fa-money-bill-wave"></i></span>
-						<form class="filter-item-formulaire eco" method="POST" action="#">
-							<input class="filter-input" type="text" name="economique" value="Economique"
+					<div class="filtre-btn bordgris fondblanc">
+						<span><i class="fas fa-money-bill-wave filtre-ico bleusite bleuclair"></i></span>
+						<form class="filtre-btn-libelle eco" method="POST" action="#">
+							<input class="filtre-input" type="text" name="economique" value="Economique"
 								disabled="disabled">
 						</form>
 					</div>
@@ -89,7 +89,7 @@
 -->	
 
 
-
+<!--
 
 					<div class="filtre-btn">
 						<span class="fas fa-child"></span> <button type="button"> Familial </button>
@@ -102,14 +102,15 @@
 					<div class="filtre-btn">
 						<span class="fas fa-dog"></span> <button type="button"> Animaux autorisés</button>
 					</div>
+-->
 				</fieldset>
+
+
 
 				<!--  Affichage du nb d'hébergements  -->
 				<div class="info-nombre">
-					<div class="icone-info bleusite bordgris">
-						<span><i class="fas fa-info"></i></span>
-					</div>
-					<div class="texte-info titre-2 noir">
+					<span><i class="fas fa-info icone-info bleusite"></i></span>
+					<div class="info-texte titre-2 noir">
 						Plus de 500 logements dans cette ville
 					</div>
 				</div>

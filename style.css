@@ -196,86 +196,67 @@ a:focus {
 }
 
 /*  sélection des filtres */
-.sel-filtres {
+.filtres-selection {
   display: flex;
-  align-items: space-between;
   margin-bottom: 3rem;
 }
 
-.titre-filtres {
-  width:unset;
+.filtres-titre {
+  width: 100%;
   height: 3rem;
   margin-right: 4rem;
 }
-fieldset {
-  border: none;
+ 
+.filtres-selecteur {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border: solid 2px black;
+  margin-bottom: 3rem;
 }
 
-.filtre-item {}
-
 .filtre-btn {
-  /* display: flex;  */
-  display: row;
-/*  position: relative;   */
-  margin: 1rem;
+/*  Flex-direction: row;
+  position: relative;
   height: 4rem;
   border: 1px solid;
   border-radius: 2rem;
   align-items: center;
-  justify-content: center;
-  margin-right: 1rem;
+  justify-content: center;   */
+
+  display: flex;
+  margin: 1rem;
+  position: relative;
+  transition: 0.2s;
+
 }
 
 .filtre-ico {
-  margin: auto;
-  /* position: flex-start;
+  position: absolute;
+/*  z-order: 1;  */
   border: none;
   border-radius: 2rem;
-  height: auto;
-  width: auto;
   align-items: center;
-  justify-content: center;  */
-}
-.filter-container {
-  margin-left: 5%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  justify-content: center;
 }
 
-.filter-title {
-  width: 100%;
-  font-size: 1rem;
-  margin-top: 30px;
-  margin-left: 5px;
-}
-
-.filter-item {
-  display: flex;
-  margin: 10px;
-  position: relative;
-  top: 25px;
-  transition: 0.3s;
-}
-
-.filter-item i {
+.filtre-item i {
   font-size: medium;
 }
 
-.filter-input {
+.filtre-input {
   background-color: #fff;
   transition: all 0.5s;
 }
 
-.filter-input:hover {
+.filtre-input:hover {
   transform: scale(1.05);
   box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
   background-color: #0065fc;
   color: #deebff;
 }
 
-.filter-icone {
+.filtre-icone {
   background-color: #deebff;
   height: 52px;
   width: 52px;
@@ -287,24 +268,23 @@ fieldset {
   z-index: 1;
 }
 
-.filter-icone i,
+.filtre-icone i,
 .icone-info i {
   color: #0065fc;
   margin: auto;
 }
 
 
-.filtre-item-formulaire {
+.filtre-item-libelle {
   display: flex;
   justify-content: flex-start;
 }
 
-.filter-item-formulaire input {
-  height: 50px;
-  border: solid 1px #deebff;
-  border-radius: 20px;
-  padding-left: 56px;
-  font-weight: bolder;
+.filtre-item-libelle input {
+  height: 4rem;
+  border-radius: 2rem;
+  padding-left: 6rem;
+/*  font-weight: bolder;   */
 }
 
 
@@ -312,11 +292,6 @@ fieldset {
   align-items: center;
   justify-content: center;
   padding-left: 2rem;
-}
-
-.filtre-input {
-  /* display: none;  */
-  /* visibility: hidden;  */
 }
 
 .eco input {
@@ -337,21 +312,23 @@ fieldset {
 
 /*  Affichage du nombre de logements  */
 .info-nombre {
+  width: 100%;
   display: flex;
+  align-items: center;
   margin-bottom: 4rem;
  }
 
 .icone-info {
-
-  align-items: center;
-  justify-content: center;
+  display: flex;
   height: 3rem;
   width: 3rem;
-  border: solid 0.1rem #f2f2f2;
+  align-items: center;
+  justify-content: center;
+  border: solid 0.1rem;
   border-radius: 50%;
 }
 
-.text-info {
+.info-texte {
   padding-left: 2rem;
 }
 
