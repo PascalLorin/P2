@@ -44,17 +44,17 @@
 			<div class="sel-ville">
 				<form method="POST" action="#" class="recherche">
 					<!--  h2  -->
-					<button class="marker-ico noir fondgris" type="button"
+					<button class="marker-ico noir fondgris" type="button" name="map-marker"
 						rel="Cliquer sur le bouton pour rechercher sur un plan" alt="Bouton de recherche sur un plan">
 						<i class="fa fa-map-marker-alt" aria-hidden="true"></i>
 					</button>
-					<input class="recherche noir" id="recherche" size="20" max-lenght="100" autocomplete required
+					<input class="recherche" id="recherche" type="input" size="20" max-lenght="100" autocomplete required
 						placeholder="Marseille, France">
-					<button class="search-ico charbleuclair fondbleu" type="button"
+					<button class="search-ico charbleuclair fondbleu" type="button" name="rechercher"
 						rel="Cliquer sur le bouton pour rechercher ville" alt="Bouton de recherche de la ville saisie">
 						<i class="fa fa-search" aria-hidden="true"></i>
 					</button>
-					<button class="btn-recherche charbleuclair fondbleu" type="button"
+					<button class="btn-recherche charbleuclair fondbleu" type="button" name="rechercher"
 						rel="Cliquer sur le bouton pour rechercher ville"
 						alt="Bouton de recherche de la ville saisie">Rechercher
 					</button>
@@ -71,47 +71,43 @@
 		
 					<div class="filtre-btn bordgris fondblanc">
 						<span><i class="fas fa-money-bill-wave filtre-ico bleusite bleuclair"></i></span>
-						<form class="filtre-btn-libelle eco" method="POST" action="#">
-							<input class="filtre-input" type="text" name="economique" value="Economique"
-								disabled="disabled">
+						<form class="eco" method="POST" action="#">
+							<input class="filtre-input titre-m noir fondblanc" type="submit"  name="economique" value="Economique">
+							  <!--   aria-hidden="true" disabled="disabled">   -->
 						</form>
 					</div>
-<!--
-					<div>
-						<span class="filtre-ico bleusite bleuclair"><i class="fas fa-money-bill-wave"></i></span>
-						<form method="POST" action="#" class="eco filtre-btn bordgris">
-							<input type="submit" aria-hidden="true" rel="Cliquer sur le bouton pour sélectionner ce filtre" alt="Sélectionne ce filtre">
-									<div class="filtre-nom">
-								Economique
-							</div>
-						</input>
-					</form>
--->	
-
-
-<!--
-
-					<div class="filtre-btn">
-						<span class="fas fa-child"></span> <button type="button"> Familial </button>
+		
+					<div class="filtre-btn bordgris fondblanc">
+						<span><i class="fas fa-child filtre-ico bleusite bleuclair"></i></span>
+						<form class="familial" method="POST" action="#">
+							<input class="filtre-input titre-m noir fondblanc" type="submit"  name="familial" value="Familial">
+							  <!--   aria-hidden="true" disabled="disabled">   -->
+						</form>
+					</div>
+		
+					<div class="filtre-btn bordgris fondblanc">
+						<span><i class="fas fa-heart filtre-ico bleusite bleuclair"></i></span>
+						<form class="romantique" method="POST" action="#">
+							<input class="filtre-input titre-m noir fondblanc" type="submit"  name="romantique" value="Romantique">
+							  <!--   aria-hidden="true" disabled="disabled">   -->
+						</form>
+					</div>
+					
+					<div class="filtre-btn bordgris fondblanc">
+						<span><i class="fas fa-dog filtre-ico bleusite bleuclair"></i></span>
+						<form class="animaux" method="POST" action="#">
+							<input class="filtre-input titre-m noir fondblanc" type="submit"  name="animaux" value="Animaux autorisés">
+							  <!--   aria-hidden="true" disabled="disabled">   -->
+						</form>
 					</div>
 
-					<div class="filtre-btn">
-						<span class="fas fa-heart"></span> <button type="button"> Romantique </button>
-					</div>
-
-					<div class="filtre-btn">
-						<span class="fas fa-dog"></span> <button type="button"> Animaux autorisés</button>
-					</div>
--->
 				</fieldset>
-
-
 
 				<!--  Affichage du nb d'hébergements  -->
 				<div class="info-nombre">
 					<span><i class="fas fa-info icone-info bleusite"></i></span>
-					<div class="info-texte titre-2 noir">
-						Plus de 500 logements dans cette ville
+					<div class="titre-2 noir info-texte">
+						Plus de 500 logements sont disponibles dans cette ville
 					</div>
 				</div>
 			<!--   fin de la sélection des filtres-->

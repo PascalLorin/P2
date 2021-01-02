@@ -203,7 +203,7 @@ a:focus {
 
 .filtres-titre {
   width: 100%;
-  height: 3rem;
+  height: 4rem;
   margin-right: 4rem;
 }
  
@@ -211,103 +211,79 @@ a:focus {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  border: solid 2px black;
+  border: none;
   margin-bottom: 3rem;
 }
 
 .filtre-btn {
-/*  Flex-direction: row;
-  position: relative;
+  display: flex;
   height: 4rem;
   border: 1px solid;
   border-radius: 2rem;
   align-items: center;
-  justify-content: center;   */
-
-  display: flex;
+  justify-content: center;
   margin: 1rem;
-  position: relative;
-  transition: 0.2s;
-
 }
 
 .filtre-ico {
-  position: absolute;
-/*  z-order: 1;  */
-  border: none;
-  border-radius: 2rem;
-  align-items: center;
-  justify-content: center;
-}
-
-.filtre-item i {
-  font-size: medium;
-}
-
-.filtre-input {
-  background-color: #fff;
-  transition: all 0.5s;
-}
-
-.filtre-input:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
-  background-color: #0065fc;
-  color: #deebff;
-}
-
-.filtre-icone {
-  background-color: #deebff;
-  height: 52px;
-  width: 52px;
+  height: 4rem;
+  width: 4rem;
   border-radius: 50%;
   display: flex;
-  position: absolute;
-  left: -9px;
-  top: -1px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  left: -0.2rem;
   z-index: 1;
 }
 
-.filtre-icone i,
-.icone-info i {
-  color: #0065fc;
+.filtre-input {
+  height: 3.8rem;
+  border: none;
+  border-radius: 2rem;
+  padding-left: 1.9rem;
+  padding-right: 1.9rem;
+  font-weight: 900;
+  background-color: white;
+  color: black;   
+}
+
+.filtre-input:hover {
+  cursor: pointer;
+  background-color: #0065fc;
+  color: #fff;
+}
+
+.filtre-input:focus {
+  cursor: pointer;
+  background-color:#0065fc;
+  color: #000;
+}
+
+.filtre-input:visited {
+  background-color: #0065fc;
+  color: #000;
+  font-size: 3rem;
+}
+
+.filtre-ico i {
   margin: auto;
 }
 
-
-.filtre-item-libelle {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.filtre-item-libelle input {
-  height: 4rem;
-  border-radius: 2rem;
-  padding-left: 6rem;
-/*  font-weight: bolder;   */
-}
-
-
-.filtre-nom {
-  align-items: center;
-  justify-content: center;
-  padding-left: 2rem;
-}
-
-.eco input {
-  width: 22rem;
-}
-
-.famille input {
-  width: 13rem;
-}
-
-.romantique input {
+.eco {
   width: 16rem;
 }
 
-.animaux input {
-  width: 19rem;
+.familial {
+  width: 11rem;
+}
+
+.romantique {
+  width: 15rem;
+}
+
+.animaux {
+  width: 21rem;
 }
 
 /*  Affichage du nombre de logements  */
