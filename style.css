@@ -4,7 +4,8 @@ html {
 }
 
 body {
-  font-size: 1.6rem;     /* =16px */
+  font-size: 1.6rem;
+  /* =16px */
 }
 
 .titre-p {
@@ -23,17 +24,49 @@ body {
 }
 
 /* charte des couleurs du site, hormis blanc  */
-.bleuclair {background-color: #deebff}
-.fondbleu {background-color: #0065fc}
-.fondgris {background-color: #f2f2f2}
-.fondblanc {background-color: #fff}
-.bleusite {color: #0065fc}
-.charbleuclair {color: #deebff}
-.noir {color: #000}
-.blanc {color: #fff}
-.grisclair{color: #f2f2f2}
-.grisfonce{color: #555}
-.bordgris{border-color:#f2f2f2}
+.bleuclair {
+  background-color: #deebff
+}
+
+.fondbleu {
+  background-color: #0065fc
+}
+
+.fondgris {
+  background-color: #f2f2f2
+}
+
+.fondblanc {
+  background-color: #fff
+}
+
+.bleusite {
+  color: #0065fc
+}
+
+.charbleuclair {
+  color: #deebff
+}
+
+.noir {
+  color: #000
+}
+
+.blanc {
+  color: #fff
+}
+
+.grisclair {
+  color: #f2f2f2
+}
+
+.grisfonce {
+  color: #555
+}
+
+.bordgris {
+  border-color: #f2f2f2
+}
 
 * {
   box-sizing: border-box;
@@ -45,6 +78,8 @@ body {
 .site-container {
   width: device-width;
   max-width: 1920px;
+  display: flex;
+  flex-flow: column wrap;
   margin: auto;
   color: black;
 }
@@ -137,8 +172,9 @@ a:focus {
 /****   PARTIE SELECTIONS            ***/
 
 .selections {
-  margin:1rem;
+  margin: 1rem;
 }
+
 /****   sélection de la ville        ***/
 /****   et sélection des filtres     ***/
 
@@ -147,7 +183,7 @@ a:focus {
   display: flex;
   flex-direction: row;
   align-items: center;
-  height:4rem;
+  height: 4rem;
   margin-bottom: 4rem;
 }
 
@@ -161,7 +197,7 @@ a:focus {
 }
 
 
-/*  sélectionne le bouton qui s'affiche   */ 
+/*  sélectionne le bouton qui s'affiche   */
 /*  icône ou bouton Rechercher            */
 .search-ico {
   display: auto;
@@ -184,7 +220,7 @@ a:focus {
   padding: 1rem;
   align-items: center;
   justify-content: center;
-  }
+}
 
 .recherche {
   height: 4rem;
@@ -206,7 +242,7 @@ a:focus {
   height: 4rem;
   margin-right: 4rem;
 }
- 
+
 .filtres-selecteur {
   display: flex;
   flex-wrap: wrap;
@@ -245,7 +281,7 @@ a:focus {
   padding-right: 1.9rem;
   font-weight: 900;
   background-color: white;
-  color: black;   
+  color: black;
 }
 
 .filtre-input:hover {
@@ -256,7 +292,7 @@ a:focus {
 
 .filtre-input:focus {
   cursor: pointer;
-  background-color:#0065fc;
+  background-color: #0065fc;
   color: #000;
 }
 
@@ -279,7 +315,7 @@ a:focus {
 }
 
 .romantique {
-  width: 15rem;
+  width: 15.5 rem;
 }
 
 .animaux {
@@ -292,7 +328,7 @@ a:focus {
   display: flex;
   align-items: center;
   margin-bottom: 4rem;
- }
+}
 
 .icone-info {
   display: flex;
@@ -324,6 +360,7 @@ a:focus {
 /* affichage des plus populaires */
 /*                               */
 aside {
+  order: 1;
   border: none;
   border-radius: 2.5rem;
   padding: 5rem;
@@ -343,12 +380,11 @@ aside {
   grid-area: populaires;
   grid-template-columns: 1fr;
   grid-row-gap: 4rem;
-  grid-column-gap: 4rem; 
   justify-items: center;
 }
 
 /*   Pastilles populaires   */
-.det-pop {
+.pop-details {
   width: 100%;
   height: 20rem;
   display: flex;
@@ -359,22 +395,23 @@ aside {
 
 .pop-photo {
   object-fit: cover;
-  position:flex-start;
+  position: flex-start;
   width: 37%;
-  border-radius: 1.3rem 0 0 1.3rem;  
+  border-radius: 1.3rem 0 0 1.3rem;
 }
 
 .pop-description {
   position: relative;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   width: 100%;
   margin: 1rem;
-  justify-content: space-between;   
+  justify-content: space-between;
 }
 
 /* affichage des hébergements    */
 section {
+  order: 2;
   border: none;
   border-radius: 2.5rem;
   padding: 3rem;
@@ -390,15 +427,13 @@ section {
 
 .hebergements {
   display: grid;
-  grid-area: hebergements;
   grid-template-columns: 1fr;
   grid-row-gap: 4rem;
-  grid-column-gap: 4rem; 
   justify-items: center;
 }
 
 /*   Pastilles hébergements   */
-.det-heb {
+.heb-details {
   display: flex;
   flex-direction: column;
   height: 30rem;
@@ -413,17 +448,17 @@ section {
   object-fit: cover;
   height: 60%;
   width: 100%;
-  border-radius: 1.3rem 1.3rem 0 0;  
+  border-radius: 1.3rem 1.3rem 0 0;
 }
 
 .heb-description {
   position: relative;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   flex: 1;
   width: 100%;
   padding: 1rem;
-  justify-content: space-between;   
+  justify-content: space-between;
 }
 
 .aff-plus {
@@ -432,8 +467,9 @@ section {
 
 /* affichage des activités  */
 .tab-activites {
+  width: 100%;
   border: none;
-  margin: 0.8rem;
+  padding: 0.8rem;
   margin-bottom: 3rem;
 }
 
@@ -446,38 +482,36 @@ section {
 
 .activites {
   display: grid;
-  grid-area: hebergements;
   grid-template-columns: 1fr;
   grid-row-gap: 4rem;
-  grid-column-gap: 4rem;
   justify-items: center;
 }
 
 /*   Pastilles activités   */
-.det-act {
+.act-details {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 30rem;
+  height: 40rem;
   border-radius: 1.5rem;
   box-shadow: 1px 1px 15px #444;
-  align-items: space-between;
 }
+
 .act-photo {
+  
   object-fit: cover;
-  position:flex-start;
-  height: 85%;
   width: 100%;
-  border-radius: 1.5rem 1.5rem 0 0;  
+  height: 35rem;
+  border-radius: 1.5rem 1.5rem 0 0;
 }
 
 .act-description {
-  position: relative;
-  display: flex;
-  flex-direction:column;
-  width: 100%;
+  height: 5rem;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
   padding-left: 2rem;
-  margin: 1rem;
+  width: auto;
 }
 
 /* Style du footer  */
@@ -485,9 +519,6 @@ section {
 
 footer {
   padding-top: 4rem;
-}
-
-.menus-f {
   display: flex;
   flex-wrap: wrap;
 }
@@ -498,3 +529,105 @@ footer {
   width: 100%;
   padding-bottom: 4rem;
 }
+
+/*   Responsive layout - Affichages différents suivant la taille de l'écran   */
+/* ==> Affichage sur une ligne du menu principal                              */
+/* ==> Affichage en colonnes des résultats, activités et menus du footer      */
+
+/* Petits écrans : mobiles horizontal, petites tablettes vertical             */
+/* Pas de changement du menu principal     */
+/* Affichages résultats sur 2 colonnes     */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+  /* Style des blocs principaux */
+  section {
+    order: 1;
+    width: 50%;
+  }
+
+  aside {
+    order: 2;
+    max-width: 50%;
+  }
+
+  .activites {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 4rem;
+  }
+
+  /* Style du footer */
+  .footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .fmenu {
+    width: 50%;
+  }
+
+}
+
+/* Petits écrans : tablettes horizontal, et écrans basse définition            */
+/* menu principal sur une ligne            */
+/* Affichages résultats sur 3 colonnes     */
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    padding: 15px 15px;
+  }
+
+
+  /* Style des blocs principaux */
+  section {
+    order: 1;
+    width: 66.67%;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 4rem;
+  }
+
+  aside {
+    order: 2;
+    width: 33.33%;
+  }
+
+  .activites {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 4rem;
+    flex-wrap: wrap;
+  }
+
+  /* Style the footer */
+  .footer {
+    flex-direction: row;
+  }
+
+  .fmenu {
+    width: 33%;
+  }
+
+}
+
+/* Petits écrans : tablettes horizontal, et écrans basse définition            */
+/* menu principal sur une ligne            */
+/* Affichages résultats sur 4 colonnes     */
+/*
+
+@media screen and (min-width: 992x) {
+
+  .site-container {
+    flex-direction: row;
+  }
+}
+    grid-template-columns: 1fr 1fr;
+
+#menu_principal {
+  display: -webkit-flex-direction-row;
+  padding: 15px 15px;
+}
+
+}
+
+*/
