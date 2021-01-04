@@ -79,7 +79,7 @@ body {
   width: device-width;
   max-width: 1920px;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column;   /* wrap;  */
   margin: auto;
   color: black;
 }
@@ -115,7 +115,7 @@ a:focus {
 }
 
 .logo {
-  height: 5rem;
+  width: 7rem;
   margin: 0.3rem;
 }
 
@@ -127,19 +127,17 @@ a:focus {
 }
 
 .navbar a {
-  width:50%;
+  width: 50%;
   display: block;
-  font-size: 1.3rem;
-  font-weight: 600;
 }
 
 .navbar-h {
   width: 50%;
   text-align: center;
   position: relative;
-  border-top: none;
+  border-top: 0.3rem solid transparent;
   border-bottom: 0.3rem solid;
-  border-color: 'bleusite';
+  border-bottom-color: 'bleusite';
   padding-bottom: 1rem;
 }
 
@@ -147,15 +145,18 @@ a:focus {
   width: 50%;
   text-align: center;
   position: relative;
+  border-top: 0.3rem solid transparent;
+  border-bottom: 0.3rem solid transparent;
   padding-bottom: 1rem;
 }
 
 .navbar-i {
   position: relative;
-  font-weight: 800;
-  bottom:3rem;
+  bottom: 4rem;
   text-align: right;
   padding-right: 4rem;
+  border-top: 0.3rem solid transparent;
+  border-bottom: 0.3rem solid transparent;
 }
 
 /****  bandeau d'accroche             ***/
@@ -531,63 +532,18 @@ footer {
   padding-bottom: 4rem;
 }
 
+/* -----  Fin de la version mobile  ------ */
+
 /*   Responsive layout - Affichages différents suivant la taille de l'écran   */
 /* ==> Affichage sur une ligne du menu principal                              */
 /* ==> Affichage en colonnes des résultats, activités et menus du footer      */
 
-
-
-/* Petits écrans : mobiles horizontal, petites tablettes vertical             */
-/* Pas de changement du menu principal     */
-
-
-/*
-@media screen and (min-width: 400px) and (max-width: 767px) {
-
-  .resultats {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-
-  section {
-    width: 50%;
-  }
-
-  aside {
-    width: 50%;
-  }
-
-  .activites {
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 4rem;
-  }
-
-  .footer {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .fmenu {
-    width: 50%;
-  }
-
-}
-
-*/
-
-
-/* Petits écrans : tablettes horizontal, et écrans basse définition            */
+/* Petits écrans                           */
 /* menu principal sur une ligne            */
 /* Affichages résultats sur 2 colonnes     */
-/* Affichages activites sur 3 colonnes     */
+/* Affichages activites sur 2 colonnes     */
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-
-  .navbar {
-    display: flex;
-    flex-direction: row;
-    padding: 15px 15px;
-  }
 
   /* Affiche le bouton Rechercher et plus l'icône   */
   .search-ico {
@@ -604,30 +560,16 @@ footer {
   }
 
   section {
-    width: 63%;
+    width: 50%;
   }
 
   aside {
-    width: 37%;
-  }
-
-  .hebergements {
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 2rem;
-    flex-wrap: wrap;
-  }
-
-  .heb-details {
-    height: 55rem;
-  }
-
-  .pop-details {
-    height: 26rem;
+    width: 50%;
   }
 
   .activites {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
     flex-wrap: wrap;
   }
 
@@ -644,85 +586,48 @@ footer {
 /* Ecrans intermédiaires                   */
 /* Menu principal sur une ligne            */
 /* Affichages résultats sur 3 colonnes     */
-/* Affichages activites sur 3 colonnes     */
+/* Affichages activites sur 2 colonnes     */
 
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
 
-
   .header {
-    display: block flex row;
+    display: flex row;
+    /*  flex-flow: row;   */
     justify-content: space-between;
   }
 
-
-  /*
-.navbar {
-	display: -webkit-flex-direction-row;
-	padding: 15px 15px;
-}
-*/
-
   .navbar {
-    width: 33%;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    flex-wrap: nowrap;
-    padding: 15px 15px;
-  }
-
-  .navbar-h,
-  .navbar-a,
-  .navbar-i {
     width: 33%;
-  }
-
-  .navbar {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
-    flex-wrap: wrap-reverse;
-    margin-bottom: 3rem;
+    align-items: center;
+    wrap: nowrap;
   }
 
   .navbar a {
+    width: 33%;
     display: block;
-    font-size: 1.8rem;
-    font-weight: 600;
   }
-
+  
   .navbar-h {
-    width: 50%;
     text-align: center;
-    position: relative;
-    border-top: none;
-    border-bottom: 0.3rem solid;
-    border-color: 'bleusite';
-    padding-bottom: 1rem;
+    border-top: 0.3rem solid;
+    border-top-color: 'bleusite';
+    border-bottom: 0.3rem transparent;
   }
 
   .navbar-a {
-    width: 50%;
     text-align: center;
-    position: relative;
-    padding-bottom: 1rem;
+    border-top: 0.3rem transparent;
+    border-bottom: 0.3rem transparent;
   }
 
   .navbar-i {
-    position: relative;
-    font-weight: 800;
-    bottom: 6rem;
-    padding-right: 4rem;
+    text-align: center;
+    border-top: 0.3rem transparent;
+    border-bottom: 0.3rem transparent;
   }
-
-
-
-
-
-
-
 
   /*  *******************   */
   .search-ico {
@@ -753,11 +658,11 @@ footer {
   }
 
   .heb-details {
-    height: 55rem;
+    height: 32rem;
   }
 
   .activites {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-column-gap: 4rem;
     flex-wrap: wrap;
   }
@@ -800,6 +705,16 @@ footer {
     display: flex;
     flex-direction: row-reverse;
   }
+/*
+  section {
+    width: 67.7%;
+  }
+
+  aside {
+    width: 33.3%;
+  }
+*/
+
 
   section {
     width: 75%;
@@ -810,7 +725,7 @@ footer {
   }
 
   .hebergements {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 4rem;
     flex-wrap: wrap;
   }
@@ -825,33 +740,12 @@ footer {
 
   .activites {
     grid-area: activity;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 20rem 4.5rem 4.5rem 17rem;
     gap: 4rem;
     flex-wrap: wrap;
   }
 
-  /*
-.port img,
-.calanques img {
-    height: 532px;
-}
-
-.parc img {
-    height: 251px;
-}
-
-.fort img {
-    height: 201px;
-
-.frioul img {
-    height: 250px;
-}
-
-.dame img {
-    height: 201px;
-}
-*/
   .a1 {
     grid-area: 1/1/6/3;
   }
