@@ -4,8 +4,8 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
-  /* =16px */
+  font-size: 1.8rem;
+
 }
 
 .titre-p {
@@ -64,10 +64,6 @@ body {
   color: #555
 }
 
-.bordgris {
-  border-color: #f2f2f2
-}
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -79,9 +75,9 @@ body {
   width: device-width;
   max-width: 1920px;
   display: flex;
-  flex-flow: column;   /* wrap;  */
+  flex-flow: column;
   margin: auto;
-  color: black;
+  color: 'noir';
 }
 
 /*  Apparence des liens   */
@@ -92,16 +88,14 @@ ul {
 
 a {
   text-decoration: none;
-  color: black
+  color: black;
 }
 
 a:hover {
-  transform: 1.15;
   cursor: pointer;
 }
 
 a:focus {
-  transform: 1.15;
   cursor: pointer;
 }
 
@@ -132,7 +126,7 @@ a:focus {
 }
 
 .navbar-h {
-  width: 50%;
+  /*  width: 50%;  */
   text-align: center;
   position: relative;
   border-top: 0.3rem solid transparent;
@@ -142,7 +136,7 @@ a:focus {
 }
 
 .navbar-a {
-  width: 50%;
+  /*  width: 50%; */
   text-align: center;
   position: relative;
   border-top: 0.3rem solid transparent;
@@ -230,6 +224,10 @@ a:focus {
 }
 
 /*  sélection des filtres */
+.selections {
+  margin-left: 1rem;
+}
+
 #filtres-selection {
   display: flex;
   flex-flow: row wrap;
@@ -242,12 +240,13 @@ a:focus {
   display: flex;
   flex-wrap: wrap;
   border: none;
+  margin-bottom: 2rem;
 }
 
 .filtres-titre {
   width: unset;
   margin-left: 1rem;
-  margin-right: 4rem;
+  margin-right: 3rem;
   margin-bottom: 1rem;
   align-items: center;
   justify-content: center;
@@ -256,8 +255,10 @@ a:focus {
 .filtre-btn {
   display: flex;
   height: 4rem;
-  border: 1px solid;
+  width:auto;
+  border: 2px solid;
   border-radius: 2rem;
+  border-color: #f2f2f2;
   align-items: center;
   justify-content: center;
   margin-right: 4rem;
@@ -265,14 +266,13 @@ a:focus {
 }
 
 .filtre-ico {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 4rem;
   width: 4rem;
   border-radius: 50%;
-  display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  left: -0.2rem;
+  left: -0.12rem;
   z-index: 1;
 }
 
@@ -283,8 +283,8 @@ a:focus {
   padding-left: 1.9rem;
   padding-right: 1.9rem;
   font-weight: 900;
-  background-color: white;
-  color: black;
+  background-color: 'blanc';
+  color: 'noir';
 }
 
 .filtre-input:hover {
@@ -300,8 +300,8 @@ a:focus {
 }
 
 .filtre-input:visited {
-  background-color: #0065fc;
-  color: #000;
+  background-color: 'bleusite';
+  color: 'noir';
   font-size: 3rem;
 }
 
@@ -309,31 +309,15 @@ a:focus {
   margin: auto;
 }
 
-.eco {
-  width: 15.6rem;
-}
-
-.familial {
-  width: 11rem;
-}
-
-.romantique {
-  width: 15.5 rem;
-}
-
-.animaux {
-  width: 21rem;
-}
-
 /*  Affichage du nombre de logements  */
 .info-nombre {
   width: 100%;
   display: flex;
   align-items: center;
-  margin-bottom: 3rem;
+  margin-left: 1rem;
 }
 
-.icone-info {
+.info-icone {
   display: flex;
   height: 3rem;
   width: 3rem;
@@ -352,7 +336,7 @@ a:focus {
 .resultats {
   width: 100%;
   margin: 0;
-  margin-bottom: 3rem;
+  margin-bottom: rem;
 }
 
 .aff-stars {
@@ -366,7 +350,7 @@ aside {
   border: none;
   border-radius: 2.5rem;
   padding: 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 .pop-entete {
@@ -382,25 +366,26 @@ aside {
   display: grid;
   grid-area: populaires;
   grid-template-columns: 1fr;
-  grid-row-gap: 4rem;
+  gap: 4rem;
   justify-items: center;
 }
 
 /*   Pastilles populaires   */
 .pop-details {
   width: 100%;
-  height: 22rem;
+  height: 25rem;
   display: flex;
   padding: 0.5rem;
-  border-radius: 1.5rem;
+  border-radius: 2rem;
   box-shadow: 1px 1px 15px #444;
+  transition: 0.2s;
 }
 
 .pop-photo {
   object-fit: cover;
   position: flex-start;
   width: 37%;
-  border-radius: 1.3rem 0 0 1.3rem;
+  border-radius: 1.8rem 0 0 1.8rem;
 }
 
 .pop-description {
@@ -417,7 +402,7 @@ section {
   border: none;
   border-radius: 2.5rem;
   padding: 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 .heb-entete {
@@ -430,27 +415,29 @@ section {
 .hebergements {
   display: grid;
   grid-template-columns: 1fr;
-  grid-row-gap: 4rem;
+  gap: 4rem;
   justify-items: center;
+  margin-bottom: 5rem;
 }
 
 /*   Pastilles hébergements   */
 .heb-details {
   display: flex;
   flex-direction: column;
-  height: 32rem;
+  height: 26rem;
   width: 100%;
   padding: 0.5rem;
-  border-radius: 1.5rem;
+  border-radius: 2rem;
   box-shadow: 1px 1px 15px #444;
   align-items: space-between;
+  transition: 0.2s;
 }
 
 .heb-photo {
   object-fit: cover;
-  height: 60%;
+  height: 62%;
   width: 100%;
-  border-radius: 1.3rem 1.3rem 0 0;
+  border-radius: 1.8rem 1.8rem 0 0;
 }
 
 .heb-description {
@@ -485,7 +472,7 @@ section {
 .activites {
   display: grid;
   grid-template-columns: 1fr;
-  grid-row-gap: 4rem;
+  gap: 4rem;
   justify-items: center;
 }
 
@@ -494,21 +481,21 @@ section {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 40rem;
-  border-radius: 1.5rem;
+  height: 26rem;
+  border-radius: 2rem;
   box-shadow: 1px 1px 15px #444;
+  transition: 0.2s;
 }
 
 .act-photo {
-
   object-fit: cover;
+  height: 20rem;
   width: 100%;
-  height: 35rem;
-  border-radius: 1.5rem 1.5rem 0 0;
+  border-radius: 1.8rem 1.8rem 0 0;
 }
 
 .act-description {
-  height: 5rem;
+  height: 6rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -516,21 +503,36 @@ section {
   width: auto;
 }
 
+.pop-details:hover,
+.heb-details:hover,
+.act-details:hover {
+  transform: scale(1.05);
+  box-shadow: 1px 1px 15px #0065fc;
+}
+
 /* Style du footer  */
 /* Container des menus de bas de page */
 
 footer {
-  padding-top: 4rem;
+  padding-left: 3rem;
+  padding-top: 3rem;
   display: flex;
   flex-wrap: wrap;
 }
 
 /*  menus du footer   */
 .fmenu {
-  line-height: 3.0rem;
+  line-height: 4.0rem;
   width: 100%;
   padding-bottom: 4rem;
 }
+
+.aff-plus:hover,
+.fmenu a:hover {
+  color: #0065fc;
+  text-transform: uppercase;
+}
+
 
 /* -----  Fin de la version mobile  ------ */
 
@@ -545,6 +547,31 @@ footer {
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
 
+  body {
+    font-size: 1.6rem;
+  
+  }
+  
+  .titre-p {
+    font-weight: 900;
+    font-size: 2.4rem;
+  }
+  
+  .titre-2 {
+    font-weight: 400;
+    font-size: 1.8rem;
+  }
+  
+  .titre-m {
+    font-weight: 600;
+    font-size: 2.0rem;
+  }
+
+  h2 {
+    font-weight:900;
+    font-size:1.4rem;
+  }
+  
   /* Affiche le bouton Rechercher et plus l'icône   */
   .search-ico {
     display: none;
@@ -558,7 +585,6 @@ footer {
     display: flex;
     flex-direction: row-reverse;
   }
-
   section {
     width: 50%;
   }
@@ -567,10 +593,80 @@ footer {
     width: 50%;
   }
 
+  .pop-details {
+    height: 22rem;
+  }
+  
+  .heb-details {
+    height: 30rem;
+  }
+
   .activites {
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: [ceg] 1fr [ced] 1fr;
+    grid-template-rows: repeat(16, [rng] 4rem);
+    justify-items: center;
+    margin-bottom: 3rem;
+  }
+
+  .a1 img {
+    height: 57rem
+  }
+
+  .a1 {
+    height: 62rem;
+    grid-column: ceg;
+    grid-row: 1/9;
+  }
+
+  .a2 img {
+    height: 31rem
+  }
+
+  .a2 {
+    height: 36rem;
+    grid-column: ced;
+    grid-row: 1/6;
+  }
+
+  .a3 img {
+    height: 17rem
+  }
+
+  .a3 {
+    height: 22rem;
+    grid-column: ced;
+    grid-row: 6/9;
+  }
+
+  .a4 img {
+    height: 57rem
+  }
+
+  .a4 {
+    height: 62rem;
+    grid-column: ceg;
+    grid-row: 9/17;
+  }
+
+  .a5 img {
+    height: 24rem
+  }
+
+  .a5 {
+    height: 29rem;
+    grid-column: ced;
+    grid-row: 9/13;
+  }
+
+  .a6 img {
+    height: 25rem
+  }
+
+  .a6 {
+    height: 30rem;
+    grid-column: ced;
+    grid-row: 13/17;
   }
 
   .footer {
@@ -591,45 +687,31 @@ footer {
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
 
-  .header {
-    display: flex row;
-    /*  flex-flow: row;   */
-    justify-content: space-between;
-  }
-
-  .navbar {
-    display: flex;
-    flex-direction: row;
-    width: 33%;
-    align-items: center;
-    wrap: nowrap;
-  }
-
-  .navbar a {
-    width: 33%;
-    display: block;
+  body {
+    font-size: 1.2rem;
+  
   }
   
-  .navbar-h {
-    text-align: center;
-    border-top: 0.3rem solid;
-    border-top-color: 'bleusite';
-    border-bottom: 0.3rem transparent;
+  .titre-p {
+    font-weight: 900;
+    font-size: 1.6rem;
+  }
+  
+  .titre-2 {
+    font-weight: 400;
+    font-size: 1.2rem;
+  }
+  
+  .titre-m {
+    font-weight: 600;
+    font-size: 1.5rem;
   }
 
-  .navbar-a {
-    text-align: center;
-    border-top: 0.3rem transparent;
-    border-bottom: 0.3rem transparent;
+  h2 {
+    font-weight:900;
+    font-size:1.4rem;
   }
 
-  .navbar-i {
-    text-align: center;
-    border-top: 0.3rem transparent;
-    border-bottom: 0.3rem transparent;
-  }
-
-  /*  *******************   */
   .search-ico {
     display: none;
   }
@@ -652,19 +734,85 @@ footer {
   }
 
   .hebergements {
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 4rem;
     flex-wrap: wrap;
   }
 
+  .pop-details {
+    height: 22rem;
+  }
+  
   .heb-details {
-    height: 32rem;
+    height: 30rem;
   }
 
   .activites {
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 4rem;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: [ceg] 1fr [ced] 1fr;
+    grid-template-rows: repeat(16, [rng] 4rem);
+    justify-items: center;
+    margin-bottom: 3rem;
+  }
+
+  .a1 img {
+    height: 57rem
+  }
+
+  .a1 {
+    height: 62rem;
+    grid-column: ceg;
+    grid-row: 1/9;
+  }
+
+  .a2 img {
+    height: 31rem
+  }
+
+  .a2 {
+    height: 36rem;
+    grid-column: ced;
+    grid-row: 1/6;
+  }
+
+  .a3 img {
+    height: 17rem
+  }
+
+  .a3 {
+    height: 22rem;
+    grid-column: ced;
+    grid-row: 6/9;
+  }
+
+  .a4 img {
+    height: 57rem
+  }
+
+  .a4 {
+    height: 62rem;
+    grid-column: ceg;
+    grid-row: 9/17;
+  }
+
+  .a5 img {
+    height: 24rem
+  }
+
+  .a5 {
+    height: 29rem;
+    grid-column: ced;
+    grid-row: 9/13;
+  }
+
+  .a6 img {
+    height: 25rem
+  }
+
+  .a6 {
+    height: 30rem;
+    grid-column: ced;
+    grid-row: 13/17;
   }
 
   .footer {
@@ -685,10 +833,29 @@ footer {
 
 @media screen and (min-width: 1200px) {
 
-  .navbar {
-    display: flex;
-    flex-direction: row;
-    padding: 15px 15px;
+  body {
+    font-size: 1.8rem;
+  
+  }
+  
+  .titre-p {
+    font-weight: 900;
+    font-size: 2.6rem;
+  }
+  
+  .titre-2 {
+    font-weight: 400;
+    font-size: 1.7rem;
+  }
+  
+  .titre-m {
+    font-weight: 600;
+    font-size: 2.1rem;
+  }
+
+  h2 {
+    font-weight:900;
+    font-size:1.8rem;
   }
 
   /*  recherche ville  */
@@ -700,75 +867,101 @@ footer {
     display: block;
   }
 
+
   /*  affichage résultats  */
   .resultats {
     display: flex;
     flex-direction: row-reverse;
   }
-/*
+
   section {
-    width: 67.7%;
+    width: 73%;
   }
 
   aside {
-    width: 33.3%;
-  }
-*/
-
-
-  section {
-    width: 75%;
-  }
-
-  aside {
-    width: 25%;
+    width: 27%;
   }
 
   .hebergements {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 4rem;
     flex-wrap: wrap;
-  }
-
-  .heb-details {
-    height: 32rem;
   }
 
   .pop-details {
-    height: 22rem;
+    height: 18rem;
+  }
+  
+  .heb-details {
+    height: 24rem;
   }
 
   .activites {
-    grid-area: activity;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 20rem 4.5rem 4.5rem 17rem;
-    gap: 4rem;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: [ceg] 1fr [cig] 1fr [cid] 1fr [ced] 1fr;
+    grid-template-rows: repeat(8, [rng] 4rem);
+    justify-items: center;
+    margin-bottom: 3rem;
+  }
+
+  .a1 img {
+    height: 57rem
   }
 
   .a1 {
-    grid-area: 1/1/6/3;
+    height: 62rem;
+    grid-column: ceg;
+    grid-row: 1/9;
+  }
+
+  .a2 img {
+    height: 31rem
   }
 
   .a2 {
-    grid-area: 1/3/3/5;
+    height: 36rem;
+    grid-column: cig;
+    grid-row: 1/6;
+  }
+
+  .a3 img {
+    height: 17rem
   }
 
   .a3 {
-    grid-area: 3/3/6/5;
+    height: 22rem;
+    grid-column: cig;
+    grid-row: 6/9;
   }
 
+  .a4 img {
+    height: 57rem
+  }
 
   .a4 {
-    grid-area: 1/5/6/8;
+    height: 62rem;
+    grid-column: cid;
+    grid-row: 1/9;
+  }
+
+  .a5 img {
+    height: 24rem
   }
 
   .a5 {
-    grid-area: 1/8/3/8;
+    height: 29rem;
+    grid-column: ced;
+    grid-row: 1/5;
+  }
+
+  .a6 img {
+    height: 25rem
   }
 
   .a6 {
-    grid-area: 3/8/6/8;
+    height: 30rem;
+    grid-column: ced;
+    grid-row: 5/9;
   }
 
   .footer {

@@ -46,21 +46,21 @@
 				<form method="POST" action="#" class="recherche">
 
 					<button class="marker-ico noir fondgris" type="button" name="map-marker"
-						rel="Cliquer sur l'icône pour rechercher sur un plan" alt="Icône de recherche sur un plan">
+						title="Cliquer sur l'icône pour rechercher sur un plan" alt="Icône de recherche sur un plan">
 						<i class="fas fa-map-marker-alt" aria-hidden="true"></i>
 					</button>
 
-					<input class="recherche" id="recherche" type="input" size="20" max-lenght="100" autocomplete
+					<input class="recherche" id="recherche" type="input" size="23" max-lenght="100" autocomplete
 						required placeholder="Marseille, France">
 					</input>
 
 					<button class="search-ico charbleuclair fondbleu" type="button" name="rechercher">
-						<i class="fa fa-search" aria-hidden="true" rel="Cliquer sur l'icône pour rechercher la ville"
+						<i class="fa fa-search" aria-hidden="true" title="Cliquer sur l'icône pour rechercher la ville"
 							alt="Icône de recherche de la ville saisie"></i>
 					</button>
 
 					<button class="btn-recherche titre-m charbleuclair fondbleu" type="button" name="rechercher"
-						aria-hidden="true" rel="Cliquer sur le bouton pour rechercher la ville"
+						aria-hidden="true" title="Cliquer sur le bouton pour rechercher la ville"
 						alt="Bouton de recherche de la ville saisie">Rechercher
 					</button>
 
@@ -80,7 +80,8 @@
 						<span><i class="fas fa-money-bill-wave filtre-ico bleusite bleuclair"></i></span>
 						<form class="eco" method="POST" action="#">
 							<input class="filtre-input titre-m noir fondblanc" type="submit" name="economique"
-								value="Economique">
+								value="Economique" title="Cliquer pour sélectionner les hébergements économiques"
+								alt="Sélectionner le filtre économique">
 						</form>
 					</div>
 
@@ -88,7 +89,8 @@
 						<span><i class="fas fa-child filtre-ico bleusite bleuclair"></i></span>
 						<form class="familial" method="POST" action="#">
 							<input class="filtre-input titre-m noir fondblanc" type="submit" name="familial"
-								value="Familial">
+								value="Familial" title="Cliquer pour sélectionner les hébergements pour familles"
+								alt="Sélectionner le filtre familial">
 						</form>
 					</div>
 
@@ -96,7 +98,8 @@
 						<span><i class="fas fa-heart filtre-ico bleusite bleuclair"></i></span>
 						<form class="romantique" method="POST" action="#">
 							<input class="filtre-input titre-m noir fondblanc" type="submit" name="romantique"
-								value="Romantique">
+								value="Romantique" title="Cliquer pour sélectionner les hébergements romantiques"
+								alt="Sélectionner le filtre romantique">
 						</form>
 					</div>
 
@@ -104,23 +107,26 @@
 						<span><i class="fas fa-dog filtre-ico bleusite bleuclair"></i></span>
 						<form class="animaux" method="POST" action="#">
 							<input class="filtre-input titre-m noir fondblanc" type="submit" name="animaux"
-								value="Animaux autorisés">
+								value="Animaux autorisés"
+								title="Cliquer pour sélectionner les hébergements où les animaux sont autorisés"
+								alt="Sélectionner le filtre Animaux autorisés">
 						</form>
 					</div>
 
 				</fieldset>
-			</div>
-			<!--   fin de la sélection des filtres-->
 
-			<!--  Affichage du nb d'hébergements  -->
-			<div class="info-nombre">
-				<span><i class="fas fa-info icone-info bleusite"></i></span>
-				<div class="titre-2 noir info-texte">
-					Plus de 500 logements sont disponibles dans cette ville
+				<!--   fin de la sélection des filtres-->
+
+				<!--  Affichage du nb d'hébergements  -->
+				<div class="info-nombre">
+					<span><i class="fas fa-info info-icone bleusite"></i></span>
+					<div class="titre-2 noir info-texte">
+						Plus de 500 logements sont disponibles dans cette ville
+					</div>
 				</div>
 			</div>
-			<!--  Fin des sélections  -->
 		</div>
+		<!--  Fin des sélections  -->
 
 		<!-- Début affichage des résultats -->
 
@@ -133,11 +139,10 @@
 				</div>
 				<div class="populaires">
 					<a href="./details.html" target="_blank" title="Cliquer pour afficher les détails, nouvel onglet"
-						alt="Afficher les détails">
+						alt="Une chambre de l'hotel Le soleil du matin">
 						<div class="pop-details fondblanc">
 							<img class="pop-photo"
-								src="./images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-								alt="Une chambre de l'hotel Le soleil du matin">
+								src="./images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
 							<div class="pop-description">
 								<div>
 									<h2>Hôtel Le soleil du matin</h2>
@@ -156,11 +161,10 @@
 						</div>
 					</a>
 					<a href="./details.html" target="_blank" title="Cliquer pour afficher les détails, nouvel onglet"
-						alt="Afficher les détails">
+						alt="Une chambre au coeur de l'eau">
 						<div class="pop-details fondblanc">
 							<img class="pop-photo"
-								src="./images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg"
-								alt="Une chambre au coeur de l'eau">
+								src="./images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg">
 							<div class="pop-description">
 								<div>
 									<h2>Au coeur de l'eau</h2>
@@ -173,18 +177,17 @@
 										<li> <i class="fas fa-star bleusite"></i></li>
 										<li> <i class="fas fa-star bleusite"></i></li>
 										<li> <i class="fas fa-star bleusite"></i></li>
-										<li> <i class="fas fa-star grisfonce"></i></li>
+										<li> <i class="fas fa-star grisclair"></i></li>
 									</ul>
 								</div>
 							</div>
 						</div>
 					</a>
 					<a href="./details.html" target="_blank" title="Cliquer pour afficher les détails, nouvel onglet"
-						alt="Afficher les détails">
+						alt="Une chambre de l'hotel Tout Bleu et Blanc">
 						<div class="pop-details fondblanc">
 							<img class="pop-photo"
-								src="./images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
-								alt="Une chambre de l'hotel Tout Bleu et Blanc">
+								src="./images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg">
 							<div class="pop-description">
 								<div>
 									<h2>Hôtel Tout bleu et Blanc</h2>
@@ -196,7 +199,7 @@
 										<li> <i class="fas fa-star bleusite"></i></li>
 										<li> <i class="fas fa-star bleusite"></i></li>
 										<li> <i class="fas fa-star bleusite"></i></li>
-										<li> <i class="fas fa-star grisfonce"></i></li>
+										<li> <i class="fas fa-star grisclair"></i></li>
 									</ul>
 								</div>
 							</div>
@@ -212,12 +215,10 @@
 				</div>
 				<div class="hebergements">
 					<a href="./details.html" target="_blank" title="Cliquer pour afficher les détails, nouvel onglet"
-						alt="Afficher les détails">
-
+						alt="Une chambre de l'auberge la Cannebière">
 						<div class="heb-details fondblanc">
 							<img class="heb-photo"
-								src="./images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
-								alt="Une chambre de l'auberge la Cannebière">
+								src="./images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
 							<div class="heb-description">
 								<h2>Auberge de la Cannebière</h2>
 								<div class="titre-2">Nuit à partir de <strong>25 €</strong></div>
@@ -226,19 +227,17 @@
 									<li> <i class="fas fa-star bleusite"></i></li>
 									<li> <i class="fas fa-star bleusite"></i></li>
 									<li> <i class="fas fa-star bleusite"></i></li>
-									<li> <i class="fas fa-star grisfonce"></i></li>
+									<li> <i class="fas fa-star grisclair"></i></li>
 								</ul>
 							</div>
 						</div>
 					</a>
 
 					<a href="./details.html" target="_blank" title="Cliquer pour afficher les détails, nouvel onglet"
-						alt="Afficher les détails">
-
+						alt="Une chambre de l'hôtel du port">
 						<div class="heb-details fondblanc">
 							<img class="heb-photo"
-								src="./images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
-								alt="Une chambre de l'hôtel du port">
+								src="./images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
 							<div class="heb-description">
 								<h2>Hôtel du port</h2>
 								<div class="heb-prix titre-2">Nuit à partir de 52 <strong>€</strong></div>
@@ -254,12 +253,10 @@
 					</a>
 
 					<a href="./details.html" target="_blank" title="Cliquer pour afficher les détails, nouvel onglet"
-						alt="Afficher les détails">
-
+						alt="Une chambre de l'hôtel Les mouettes">
 						<div class="heb-details fondblanc">
 							<img class="heb-photo"
-								src="./images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg"
-								alt="Une chambre de l'hôtel Les mouettes">
+								src="./images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg">
 							<div class="heb-description">
 								<h2>Hôtel les mouettes</h2>
 								<div class="heb-prix titre-2">Nuit à partir de 76 <strong>€</strong></div>
@@ -268,19 +265,17 @@
 									<li> <i class="fas fa-star bleusite"></i></li>
 									<li> <i class="fas fa-star bleusite"></i></li>
 									<li> <i class="fas fa-star bleusite"></i></li>
-									<li> <i class="fas fa-star grisfonce"></i></li>
+									<li> <i class="fas fa-star grisclair"></i></li>
 								</ul>
 							</div>
 						</div>
 					</a>
 
 					<a href="./details.html" target="_blank" title="Cliquer pour afficher les détails, nouvel onglet"
-						alt="Afficher les détails">
-
+						alt="Une chambre de l'hôtel de la mer">
 						<div class="heb-details fondblanc">
 							<img class="heb-photo"
-								src="./images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
-								alt="Une chambre de l'hôtel de la mer">
+								src="./images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
 							<div class="heb-description">
 								<h2>Hôtel de la mer</h2>
 								<div class="heb-prix titre-2">Nuit à partir de 46 <strong>€</strong></div>
@@ -288,20 +283,18 @@
 									<li> <i class="fas fa-star bleusite"></i></li>
 									<li> <i class="fas fa-star bleusite"></i></li>
 									<li> <i class="fas fa-star bleusite"></i></li>
-									<li> <i class="fas fa-star grisfonce"></i></li>
-									<li> <i class="fas fa-star grisfonce"></i></li>
+									<li> <i class="fas fa-star grisclair"></i></li>
+									<li> <i class="fas fa-star grisclair"></i></li>
 								</ul>
 							</div>
 						</div>
 					</a>
 
 					<a href="./details.html" target="_blank" title="Cliquer pour afficher les détails, nouvel onglet"
-						alt="Afficher les détails">
-
+						alt="Une chambre de l'auberge Le Panier">
 						<div class="heb-details fondblanc">
 							<img class="heb-photo"
-								src="./images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
-								alt="Une chambre de l'auberge Le Panier">
+								src="./images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
 							<div class="heb-description">
 								<h2>Auberge Le Panier</h2>
 								<div class="heb-prix titre-2">Nuit à partir de <strong>23 €</strong></div>
@@ -310,19 +303,17 @@
 									<li> <i class="fas fa-star bleusite"></i></li>
 									<li> <i class="fas fa-star bleusite"></i></li>
 									<li> <i class="fas fa-star bleusite"></i></li>
-									<li> <i class="fas fa-star grisfonce"></i></li>
+									<li> <i class="fas fa-star grisclair"></i></li>
 								</ul>
 							</div>
 						</div>
 					</a>
 
 					<a href="./details.html" target="_blank" title="Cliquer pour afficher les détails, nouvel onglet"
-						alt="Afficher les détails">
-
+						alt="Une chambre de l'hôtel chez Amina">
 						<div class="heb-details fondblanc">
 							<img class="heb-photo"
-								src="./images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
-								alt="Une chambre de l'hôtel chez Amina">
+								src="./images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
 							<div class="heb-description">
 								<h2>Hôtel chez Amina</h2>
 								<div class="heb-prix titre-2">Nuit à partir de 96 <strong>€</strong></div>
@@ -339,11 +330,8 @@
 
 				</div>
 
-				<div class="aff-plus">
-					<a href="#" title="Cliquez pour afficher plus d'hébergements" alt="Afficher plus d'hébergements">
-						<h2>Afficher plus</h2>
-					</a>
-				</div>
+				<a href="#" class="aff-plus titre-m" title="Cliquez pour afficher plus d'hébergements"
+					alt="Afficher plus d'hébergements">Afficher plus</a>
 			</section>
 		</div>
 		<!-- Fin affichage des résultats -->
@@ -355,71 +343,52 @@
 			</div>
 			<div class="activites">
 
-				<a href="./activites.html" target="_blank" title="Cliquer pour afficher les détails, nouvel onglet"
-					alt="Afficher les détails">
-					<div class="act-details fondblanc a1">
-						<img class="act-photo"
-							src="./images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-							alt="Photo du Vieux Port">
-						<div class="act-description titre-m">
-							Vieux Port
-						</div>
+				<a href="./activites.html" class="act-details fondblanc a1" target="_blank"
+					title="Cliquer pour afficher les détails, nouvel onglet" alt="Photo du Vieux Port">
+					<img class="act-photo" src="./images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
+					<div class="act-description titre-m">
+						Vieux Port
 					</div>
 				</a>
 
-				<a href="./activites.html" target="_blank" title="Cliquer pour afficher les détails, nouvel onglet"
-					alt="Afficher les détails">
-					<div class="act-details fondblanc a2">
-						<img class="act-photo" src="./images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-							alt="Fort de Pomègues">
-						<div class="act-description titre-m">
-							Fort de Pomègues
-						</div>
+				<a href="./activites.html" class="act-details fondblanc a2" target="_blank"
+					title="Cliquer pour afficher les détails, nouvel onglet" alt="Fort de Pomègues">
+					<img class="act-photo" src="./images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
+					<div class="act-description titre-m">
+						Fort de Pomègues
 					</div>
 				</a>
 
-				<a href="./activites.html" target="_blank" title="Cliquer pour afficher les détails, nouvel onglet"
-					alt="Afficher les détails">
-					<div class="act-details fondblanc a3">
-						<img class="act-photo" src="./images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
-							alt="Iles du Frioul">
-						<div class="act-description titre-m">
-							Iles du Frioul
-						</div>
+				<a href="./activites.html" class="act-details fondblanc a3 target=" _blank"
+					title="Cliquer pour afficher les détails, nouvel onglet" alt="Iles du Frioul">
+					<img class="act-photo" src="./images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg">
+					<div class="act-description titre-m">
+						Iles du Frioul
 					</div>
 				</a>
 
-				<a href="./activites.html" target="_blank" title="Cliquer pour afficher les détails, nouvel onglet"
-					alt="Afficher les détails">
-					<div class="act-details fondblanc a4">
-						<img class="act-photo"
-							src="./images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-							alt="Parc National des Calanques">
-						<div class="act-description titre-m">
-							Parc National des Calanques
-						</div>
+				<a href="./activites.html" class="act-details fondblanc a4" target="_blank"
+					title="Cliquer pour afficher les détails, nouvel onglet" alt="Parc National des Calanques">
+					<img class="act-photo"
+						src="./images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg">
+					<div class="act-description titre-m">
+						Parc National des Calanques
 					</div>
 				</a>
 
-				<a href="./activites.html" target="_blank" title="Cliquer pour afficher les détails, nouvel onglet"
-					alt="Afficher les détails">
-					<div class="act-details fondblanc a5">
-						<img class="act-photo" src="./images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-							alt="Notre-Dame-de-la-Garde">
-						<div class="act-description titre-m">
-							Notre-Dame-de-la-Garde
-						</div>
+				<a href="./activites.html" class="act-details fondblanc a5" target="_blank"
+					title="Cliquer pour afficher les détails, nouvel onglet" alt="Notre-Dame-de-la-Garde">
+					<img class="act-photo" src="./images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg">
+					<div class="act-description titre-m">
+						Notre-Dame-de-la-Garde
 					</div>
 				</a>
 
-				<a href="./activites.html" target="_blank" title="Cliquer pour afficher les détails, nouvel onglet"
-					alt="Afficher les détails">
-					<div class="act-details fondblanc a6">
-						<img class="act-photo" src="./images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
-							alt="Parc Longchamp">
-						<div class="act-description titre-m">
-							Parc Longchamp
-						</div>
+				<a href="./activites.html" class="act-details fondblanc a6" target="_blank"
+					title="Cliquer pour afficher les détails, nouvel onglet" alt="Parc Longchamp">
+					<img class="act-photo" src="./images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg">
+					<div class="act-description titre-m">
+						Parc Longchamp
 					</div>
 				</a>
 			</div>
