@@ -13,7 +13,7 @@ body {
 }
 
 .site-container {
-  display: bloc;
+  display: flex;
 }
 
 
@@ -86,7 +86,7 @@ body {
   display: flex;
   flex-flow: column;
   margin: auto;
-  color: 'noir';
+  color: #000;
 }
 
 /*  Apparence des liens   */
@@ -114,10 +114,12 @@ a:focus {
 /****   main menu                   ***/
 /****   bande d'accroche            ***/
 #header {
+  height: 6rem;
   margin-bottom: 3rem;
 }
 
 .logo {
+  position: absolute;
   width: 7rem;
   margin: 0.3rem;
 }
@@ -134,30 +136,27 @@ a:focus {
   display: block;
 }
 
-.navbar-h {
+.navbar-h,
+.navbar-a,
+.navbar-i {
+  height: inherit;
   text-align: center;
-  position: relative;
   border-top: 0.3rem solid transparent;
-  border-bottom: 0.3rem solid;
-  border-bottom-color: 'bleusite';
+  border-bottom: 0.3rem solid transparent;
+  padding-top: 2rem;
   padding-bottom: 1rem;
 }
 
-.navbar-a {
-  text-align: center;
-  position: relative;
-  border-top: 0.3rem solid transparent;
-  border-bottom: 0.3rem solid transparent;
-  padding-bottom: 1rem;
+.navbar-h {
+  border-bottom: 0.3rem solid #0065fc;
 }
 
 .navbar-i {
+  font-weight: bold;
+  text-align:right;
+  padding-right: 4rem;
   position: relative;
-  bottom: 4rem;
-  text-align: right;
-  padding-right: 3rem;
-  border-top: 0.3rem solid transparent;
-  border-bottom: 0.3rem solid transparent;
+/*  bottom: 2rem;  */
 }
 
 /****  bandeau d'accroche             ***/
@@ -195,6 +194,11 @@ a:focus {
   z-index: 9;
 }
 
+.marker-ico:hover {
+  color: #fff;
+  background-color: #0065fc;
+}
+
 /*  Affiche l'icône, pas le bouton Rechercher   */
 .search-ico {
   display: block;
@@ -217,6 +221,12 @@ a:focus {
   padding-left: 2rem;
   padding-right: 2rem;
   z-index: 9;
+}
+
+.search-ico:hover,
+.btn-recherche:hover {
+  color: #000;
+  background-color:#deebff;
 }
 
 .recherche {
@@ -250,12 +260,11 @@ a:focus {
 }
 
 .filtres-titre {
-  width: unset;
+  display: flex;
+  width: auto;
   margin-left: 1rem;
   margin-right: 3rem;
-  margin-bottom: 1rem;
-  align-items: center;
-  justify-content: center;
+  padding-bottom: 3rem;
 }
 
 .filtre-btn {
@@ -289,8 +298,8 @@ a:focus {
   padding-left: 1.9rem;
   padding-right: 1.9rem;
   font-weight: 900;
-  background-color: 'blanc';
-  color: 'noir';
+  background-color: #fff;
+  color: #000;
 }
 
 .filtre-input:hover {
@@ -306,8 +315,8 @@ a:focus {
 }
 
 .filtre-input:visited {
-  background-color: 'bleusite';
-  color: 'noir';
+  background-color: #0065fc;
+  color: #000;
   font-size: 3rem;
 }
 
@@ -370,7 +379,6 @@ aside {
 .populaires {
   width: 100%;
   display: grid;
-  grid-area: populaires;
   grid-template-columns: 1fr;
   gap: 4rem;
   justify-items: center;
@@ -418,19 +426,19 @@ section {
 }
 
 .hebergements {
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr;
   gap: 4rem;
-  justify-items: center;
   margin-bottom: 5rem;
 }
 
 /*   Pastilles hébergements   */
 .heb-details {
+  width: 100%;
+  height: 26rem;
   display: flex;
   flex-direction: column;
-  height: 26rem;
-  width: 100%;
   padding: 0.5rem;
   border-radius: 2rem;
   box-shadow: 1px 1px 15px #444;
@@ -550,7 +558,7 @@ footer {
 /* Demande de basculer en mode paysage     */
 
 
-@media screen and (max-width: 423px) {
+@media screen and (max-width: 423px) and (orientation: portrait) {
 
   .changez-orientation {
     display: flex;
@@ -560,10 +568,12 @@ footer {
   }
 
   .changez-orientation span {
-    width: 100% padding: 1rem;
+    width: 100%;
+    padding: 1rem;
   }
 
   .changez-orientation h1 {
+    text-align:center;
     color: red;
   }
 
@@ -641,7 +651,7 @@ footer {
 
 /* Petits écrans      MD                   */
 /* menu principal sur une ligne            */
-/* Affichages résultats sur 1 colonnes     */
+/* Affichages résultats sur 2 colonnes     */
 /* Affichages activites sur 2 colonnes     */
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -679,6 +689,10 @@ footer {
     align-items: center;
   }
 
+  .logo {
+    position: relative;
+  }
+
   .navbar {
     width: 60%;
     height: inherit;
@@ -689,24 +703,12 @@ footer {
     display: block;
   }
 
-  .navbar-h,
-  .navbar-a,
-  .navbar-i {
-    height: inherit;
-    text-align: center;
-    border-top: 0.3rem transparent;
-    border-bottom: 0.3rem transparent;
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-  }
-
   .navbar-h {
-    border-top: 0.3rem solid;
-    border-color: #0065fc;
+    border-bottom: 0.3rem solid #fff;
+    border-top: 0.3rem solid #0065fc;
   }
 
   .navbar-i {
-    font-weight: bolder;
     bottom: 0rem;
   }
 
@@ -717,6 +719,20 @@ footer {
 
   .btn-recherche {
     display: block;
+  }
+
+  /*  affichage résultats  */
+  .resultats {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  section {
+    width: 50%;
+  }
+
+  aside {
+    width: 50%;
   }
 
   .pop-details {
@@ -806,7 +822,7 @@ footer {
 
 /* Ecrans intermédiaires     LG            */
 /* Menu principal sur une ligne            */
-/* Affichages résultats sur 2 colonnes     */
+/* Affichages résultats sur 3 colonnes     */
 /* Affichages activites sur 2 colonnes     */
 
 
@@ -845,6 +861,10 @@ footer {
     align-items: center;
   }
 
+  .logo {
+    position: relative;
+  }
+
   .navbar {
     width: 45%;
     height: inherit;
@@ -855,24 +875,12 @@ footer {
     display: block;
   }
 
-  .navbar-h,
-  .navbar-a,
-  .navbar-i {
-    height: inherit;
-    text-align: center;
-    border-top: 0.3rem transparent;
-    border-bottom: 0.3rem transparent;
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-  }
-
   .navbar-h {
-    border-top: 0.3rem solid;
-    border-color: #0065fc;
+    border-bottom: 0.3rem solid #fff;
+    border-top: 0.3rem solid #0065fc;
   }
 
   .navbar-i {
-    font-weight: bolder;
     bottom: 0rem;
   }
 
@@ -884,17 +892,23 @@ footer {
     display: block;
   }
 
+  /*  affichage résultats  */
+  .resultats {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
   .resultats {
     display: flex;
     flex-direction: row-reverse;
   }
 
   section {
-    width: 50%;
+    width: 63%;
   }
 
   aside {
-    width: 50%;
+    width: 37%;
   }
 
   .hebergements {
@@ -1028,6 +1042,10 @@ footer {
     align-items: center;
   }
 
+  .logo {
+    position: relative;
+  }
+
   .navbar {
     width: 33%;
     height: inherit;
@@ -1038,24 +1056,12 @@ footer {
     display: block;
   }
 
-  .navbar-h,
-  .navbar-a,
-  .navbar-i {
-    height: inherit;
-    text-align: center;
-    border-top: 0.3rem transparent;
-    border-bottom: 0.3rem transparent;
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-  }
-
   .navbar-h {
-    border-top: 0.3rem solid;
-    border-color: #0065fc;
+    border-bottom: 0.3rem solid #fff;
+    border-top: 0.3rem solid #0065fc;
   }
 
   .navbar-i {
-    font-weight: bolder;
     bottom: 0rem;
   }
 
